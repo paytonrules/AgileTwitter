@@ -320,7 +320,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TwitterDataSource.m</string>
+								<string>TwitterDataSourceTest.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,11 +328,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TwitterDataSource.m</string>
+										<string>TwitterDataSourceTest.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>078A0678103CBCC70052BF91</string>
+										<string>078A0680103CC0290052BF91</string>
 										<key>history</key>
 										<array>
 											<string>075AB738103AC9DD007F6780</string>
@@ -340,9 +340,9 @@
 											<string>078A057E103C93490052BF91</string>
 											<string>078A05BB103C9DC20052BF91</string>
 											<string>078A05F6103CA76E0052BF91</string>
-											<string>078A0660103CBB100052BF91</string>
+											<string>078A067B103CBF3B0052BF91</string>
+											<string>078A067C103CBF3B0052BF91</string>
 											<string>078A0676103CBCC70052BF91</string>
-											<string>078A066E103CBC090052BF91</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -388,6 +388,8 @@
 											<string>078A0670103CBC090052BF91</string>
 											<string>078A0671103CBC090052BF91</string>
 											<string>078A0677103CBCC70052BF91</string>
+											<string>078A067D103CBF3B0052BF91</string>
+											<string>078A067E103CBF3B0052BF91</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

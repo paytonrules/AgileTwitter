@@ -34,13 +34,5 @@
 	STAssertNotNil(cell, nil);
 	STAssertEqualStrings(@"TwitterCellIdentifier", cell.reuseIdentifier, nil);
 }
-//- (void) testCellZeroReturnsCellWithZero
-//{
-//	NSIndexPath *path = [NSIndexPath indexPathWithIndex:0];
-//	UITableViewCell *cell = [twitterDataSource tableView: nil cellForRowAtIndexPath:path];
-//
-//	STAssertEqualStrings(@"Zero", cell.textLabel.text, nil);
-//}
-
 
 @end
