@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface TableViewDataSource : NSObject<UITableViewDataSource> {
+@interface TwitterDataSource : NSObject<UITableViewDataSource> {
 	
 
 }

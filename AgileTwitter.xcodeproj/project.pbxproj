@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07019AC1103ACA30004D8367 /* TableViewDataSourceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07019AC0103ACA30004D8367 /* TableViewDataSourceTest.m */; };
-		07019AD7103ACAD3004D8367 /* TableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 07019AD5103ACAD3004D8367 /* TableViewDataSource.m */; };
-		07019B65103AE05F004D8367 /* TableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 07019AD5103ACAD3004D8367 /* TableViewDataSource.m */; };
+		07019AD7103ACAD3004D8367 /* TwitterDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 07019AD5103ACAD3004D8367 /* TwitterDataSource.m */; };
+		078A05A3103C98A70052BF91 /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 078A059F103C98A70052BF91 /* GTMIPhoneUnitTestDelegate.m */; };
+		078A05A4103C98A70052BF91 /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 078A05A0103C98A70052BF91 /* GTMIPhoneUnitTestMain.m */; };
+		078A05A5103C98A70052BF91 /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 078A05A2103C98A70052BF91 /* GTMSenTestCase.m */; };
+		078A05B6103C9D5A0052BF91 /* TwitterDataSourceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07019AC0103ACA30004D8367 /* TwitterDataSourceTest.m */; };
+		078A05C8103C9E450052BF91 /* TwitterDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 07019AD5103ACAD3004D8367 /* TwitterDataSource.m */; };
+		078A063B103CAC450052BF91 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078A063A103CAC450052BF91 /* OCMock.framework */; };
 		1D3623260D0F684500981E51 /* AgileTwitterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AgileTwitterAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -21,12 +25,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		07019ABF103ACA30004D8367 /* TableViewDataSourceTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDataSourceTest.h; sourceTree = "<group>"; };
-		07019AC0103ACA30004D8367 /* TableViewDataSourceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDataSourceTest.m; sourceTree = "<group>"; };
-		07019AD4103ACAD3004D8367 /* TableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDataSource.h; sourceTree = "<group>"; };
-		07019AD5103ACAD3004D8367 /* TableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDataSource.m; sourceTree = "<group>"; };
-		075AB6F2103A1E3D007F6780 /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07019ABF103ACA30004D8367 /* TwitterDataSourceTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterDataSourceTest.h; sourceTree = "<group>"; };
+		07019AC0103ACA30004D8367 /* TwitterDataSourceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterDataSourceTest.m; sourceTree = "<group>"; };
+		07019AD4103ACAD3004D8367 /* TwitterDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwitterDataSource.h; path = ../TwitterDataSource.h; sourceTree = "<group>"; };
+		07019AD5103ACAD3004D8367 /* TwitterDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TwitterDataSource.m; path = ../TwitterDataSource.m; sourceTree = "<group>"; };
 		075AB6F3103A1E3D007F6780 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
+		078A058C103C98570052BF91 /* UnitTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		078A059E103C98A70052BF91 /* GTMIPhoneUnitTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMIPhoneUnitTestDelegate.h; sourceTree = "<group>"; };
+		078A059F103C98A70052BF91 /* GTMIPhoneUnitTestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMIPhoneUnitTestDelegate.m; sourceTree = "<group>"; };
+		078A05A0103C98A70052BF91 /* GTMIPhoneUnitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMIPhoneUnitTestMain.m; sourceTree = "<group>"; };
+		078A05A1103C98A70052BF91 /* GTMSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMSenTestCase.h; sourceTree = "<group>"; };
+		078A05A2103C98A70052BF91 /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMSenTestCase.m; sourceTree = "<group>"; };
+		078A05A6103C98BE0052BF91 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		078A063A103CAC450052BF91 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = Frameworks/OCMock.framework; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* AgileTwitterAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgileTwitterAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AgileTwitterAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgileTwitterAppDelegate.m; sourceTree = "<group>"; };
@@ -43,10 +54,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		075AB6EF103A1E3D007F6780 /* Frameworks */ = {
+		078A058A103C98570052BF91 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				078A063B103CAC450052BF91 /* OCMock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,17 +78,30 @@
 		075AB703103AC6FF007F6780 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				07019AD4103ACAD3004D8367 /* TableViewDataSource.h */,
-				07019AD5103ACAD3004D8367 /* TableViewDataSource.m */,
-				07019ABF103ACA30004D8367 /* TableViewDataSourceTest.h */,
-				07019AC0103ACA30004D8367 /* TableViewDataSourceTest.m */,
+				07019ABF103ACA30004D8367 /* TwitterDataSourceTest.h */,
+				07019AC0103ACA30004D8367 /* TwitterDataSourceTest.m */,
 			);
 			name = Tests;
+			sourceTree = "<group>";
+		};
+		078A059A103C98730052BF91 /* GoogleToolbox */ = {
+			isa = PBXGroup;
+			children = (
+				078A05A6103C98BE0052BF91 /* GTMDefines.h */,
+				078A059E103C98A70052BF91 /* GTMIPhoneUnitTestDelegate.h */,
+				078A059F103C98A70052BF91 /* GTMIPhoneUnitTestDelegate.m */,
+				078A05A0103C98A70052BF91 /* GTMIPhoneUnitTestMain.m */,
+				078A05A1103C98A70052BF91 /* GTMSenTestCase.h */,
+				078A05A2103C98A70052BF91 /* GTMSenTestCase.m */,
+			);
+			name = GoogleToolbox;
 			sourceTree = "<group>";
 		};
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				07019AD4103ACAD3004D8367 /* TwitterDataSource.h */,
+				07019AD5103ACAD3004D8367 /* TwitterDataSource.m */,
 				1D3623240D0F684500981E51 /* AgileTwitterAppDelegate.h */,
 				1D3623250D0F684500981E51 /* AgileTwitterAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* AgileTwitterViewController.h */,
@@ -89,7 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* AgileTwitter.app */,
-				075AB6F2103A1E3D007F6780 /* UnitTests.octest */,
+				078A058C103C98570052BF91 /* UnitTests.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +122,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				078A059A103C98730052BF91 /* GoogleToolbox */,
 				075AB703103AC6FF007F6780 /* Tests */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -130,6 +156,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				078A063A103CAC450052BF91 /* OCMock.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
@@ -140,14 +167,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		075AB6F1103A1E3D007F6780 /* UnitTests */ = {
+		078A058B103C98570052BF91 /* UnitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 075AB6F6103A1E3E007F6780 /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildConfigurationList = 078A0598103C985A0052BF91 /* Build configuration list for PBXNativeTarget "UnitTests" */;
 			buildPhases = (
-				075AB6ED103A1E3D007F6780 /* Resources */,
-				075AB6EE103A1E3D007F6780 /* Sources */,
-				075AB6EF103A1E3D007F6780 /* Frameworks */,
-				075AB6F0103A1E3D007F6780 /* ShellScript */,
+				078A0588103C98570052BF91 /* Resources */,
+				078A0589103C98570052BF91 /* Sources */,
+				078A058A103C98570052BF91 /* Frameworks */,
+				078A05AB103C99130052BF91 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -155,8 +182,8 @@
 			);
 			name = UnitTests;
 			productName = UnitTests;
-			productReference = 075AB6F2103A1E3D007F6780 /* UnitTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 078A058C103C98570052BF91 /* UnitTests.app */;
+			productType = "com.apple.product-type.application";
 		};
 		1D6058900D05DD3D006BFB54 /* AgileTwitter */ = {
 			isa = PBXNativeTarget;
@@ -188,13 +215,13 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* AgileTwitter */,
-				075AB6F1103A1E3D007F6780 /* UnitTests */,
+				078A058B103C98570052BF91 /* UnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		075AB6ED103A1E3D007F6780 /* Resources */ = {
+		078A0588103C98570052BF91 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -213,7 +240,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		075AB6F0103A1E3D007F6780 /* ShellScript */ = {
+		078A05AB103C99130052BF91 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -224,17 +251,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+			shellScript = "./RunIPhoneUnitTest.sh\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		075AB6EE103A1E3D007F6780 /* Sources */ = {
+		078A0589103C98570052BF91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07019B65103AE05F004D8367 /* TableViewDataSource.m in Sources */,
-				07019AC1103ACA30004D8367 /* TableViewDataSourceTest.m in Sources */,
+				078A05C8103C9E450052BF91 /* TwitterDataSource.m in Sources */,
+				078A05B6103C9D5A0052BF91 /* TwitterDataSourceTest.m in Sources */,
+				078A05A3103C98A70052BF91 /* GTMIPhoneUnitTestDelegate.m in Sources */,
+				078A05A4103C98A70052BF91 /* GTMIPhoneUnitTestMain.m in Sources */,
+				078A05A5103C98A70052BF91 /* GTMSenTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,61 +275,67 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AgileTwitterAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* AgileTwitterViewController.m in Sources */,
-				07019AD7103ACAD3004D8367 /* TableViewDataSource.m in Sources */,
+				07019AD7103ACAD3004D8367 /* TwitterDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		075AB6F4103A1E3E007F6780 /* Debug */ = {
+		078A058E103C98570052BF91 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUNDLE_LOADER = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				GTM_ENABLE_LEAKS = 1;
 				INFOPLIST_FILE = "UnitTests-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
-					"-framework",
-					SenTestingKit,
 					"-framework",
 					UIKit,
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = UnitTests;
-				TEST_HOST = "";
-				WRAPPER_EXTENSION = octest;
+				SDKROOT = iphonesimulator3.0;
 			};
 			name = Debug;
 		};
-		075AB6F5103A1E3E007F6780 /* Release */ = {
+		078A058F103C98570052BF91 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
 				INFOPLIST_FILE = "UnitTests-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
-					"-framework",
-					SenTestingKit,
 					"-framework",
 					UIKit,
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = UnitTests;
-				WRAPPER_EXTENSION = octest;
+				SDKROOT = iphoneos2.1;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -359,11 +395,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		075AB6F6103A1E3E007F6780 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+		078A0598103C985A0052BF91 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				075AB6F4103A1E3E007F6780 /* Debug */,
-				075AB6F5103A1E3E007F6780 /* Release */,
+				078A058E103C98570052BF91 /* Debug */,
+				078A058F103C98570052BF91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
