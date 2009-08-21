@@ -19,12 +19,13 @@
 	return cell;
 }
 
--(NSString *)getFollowedTimelineFor:(NSString *)username since:(NSDate *)date startingAtPage:(int)pageNum
+- (NSString *)getFollowedTimelineSince: (NSDate *) date startingAtPage:(int) pageNum
 {
 	MGTwitterEngine *engine = [twitterEngineFactory createWithDelegate:self];
 	
-	return [engine getFollowedTimelineFor:username since:date startingAtPage:pageNum];
+	return [engine getFollowedTimelineFor:[engine username] since:date startingAtPage:pageNum];	
 }
+
 -(void) dealloc
 {
 	[twitterEngineFactory release];

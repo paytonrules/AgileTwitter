@@ -26,7 +26,7 @@
 - (void)viewDidLoad 
 {
 	[super viewDidLoad];
-	[twitterDataSource getFollowedTimelineFor:nil since:nil startingAtPage:0];
+	[twitterDataSource getFollowedTimelineSince:nil startingAtPage:0];
 }
 
 

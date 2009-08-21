@@ -11,7 +11,7 @@
 	AgileTwitterViewController *viewController = [[AgileTwitterViewController alloc] init];
 	viewController.twitterDataSource = (TwitterDataSource *)mockDataSource;
 	
-	[[mockDataSource expect] getFollowedTimelineFor:nil since:nil startingAtPage:0];
+	[[mockDataSource expect] getFollowedTimelineSince:nil startingAtPage:0];
 	
 	[viewController viewDidLoad];
 	

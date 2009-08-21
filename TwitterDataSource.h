@@ -8,6 +8,6 @@
 }
 
 @property(nonatomic, retain) NSObject<TwitterEngineFactory> *twitterEngineFactory;
-- (NSString *)getFollowedTimelineFor:(NSString *)username since:(NSDate *)date startingAtPage:(int)pageNum;
+- (NSString *)getFollowedTimelineSince: (NSDate *) date startingAtPage:(int) pageNum;
 
 @end
