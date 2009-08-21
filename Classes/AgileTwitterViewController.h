@@ -2,7 +2,7 @@
 #import "TwitterDataSource.h"
 
 @interface AgileTwitterViewController : UIViewController {
-	TwitterDataSource *twitterDataSource;
+	IBOutlet TwitterDataSource *twitterDataSource;
 }
 
 @property(nonatomic, retain) TwitterDataSource *twitterDataSource;

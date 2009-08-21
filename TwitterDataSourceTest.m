@@ -125,4 +125,15 @@
 	STAssertEquals(2, [twitterDataSource tableView:(UITableView *)tableView numberOfRowsInSection:0], nil);
 }
 
+-(void) testFontIsAtAReasonableLevelForTweets
+{
+	OCMockObject *tableView = [OCMockObject niceMockForClass:[UITableView class]];
+	NSDictionary *status = [NSDictionary dictionaryWithObject:@"I am a tweet - I should have a small font." forKey:@"text"];
+	NSArray *array = [NSArray arrayWithObject:status];
+	
+	[twitterDataSource statusesReceived:array forRequest:nil];
+	UITableViewCell *cell = [twitterDataSource tableView:(UITableView *)tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+	
+	STFail(@"Failure is here");
+}
 @end

@@ -36,8 +36,14 @@
 
 - (void)statusesReceived:(NSArray *)statuses forRequest:(NSString *)identifier
 {
+	if(tweets != nil)
+	{
+		[tweets release];
+	}
+	
 	tweets = [NSArray arrayWithArray:statuses];
 	[tableView reloadData];
+	[tweets retain];
 }
 
 - (void)requestSucceeded:(NSString *)requestIdentifier
@@ -68,6 +74,7 @@
 {
 	[twitterEngineFactory release];
 	[tableView release];
+	[tweets release];
 	[super dealloc];
 }
 
