@@ -1,6 +1,8 @@
 #import "MGTwitterEngine.h"
+#import "MGTwitterEngineDelegate.h"
+
 @protocol TwitterEngineFactory
 
--(MGTwitterEngine *)create;
+-(MGTwitterEngine *)createWithDelegate: (NSObject<MGTwitterEngineDelegate> *)delegate;
 
 @end

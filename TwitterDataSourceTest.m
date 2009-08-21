@@ -42,7 +42,7 @@
 	OCMockObject *twitterEngineFactory = [OCMockObject mockForProtocol:@protocol(TwitterEngineFactory)];
 	twitterDataSource.twitterEngineFactory = (NSObject *)twitterEngineFactory;
 
-	[[twitterEngineFactory expect] create];
+	[[twitterEngineFactory expect] createWithDelegate: twitterDataSource];
 	
 	[twitterDataSource getFollowedTimelineFor:nil since:nil startingAtPage:0];
 	
@@ -54,7 +54,7 @@
 	OCMockObject *twitterEngine = [OCMockObject mockForClass:[MGTwitterEngine class]];
 	OCMockObject *twitterEngineFactory = [OCMockObject mockForProtocol:@protocol(TwitterEngineFactory)];
 	twitterDataSource.twitterEngineFactory = (NSObject *)twitterEngineFactory;
-	[[[twitterEngineFactory stub] andReturn: twitterEngine] create];
+	[[[twitterEngineFactory stub] andReturn: twitterEngine] createWithDelegate: OCMOCK_ANY];
 
 	NSDate *date = [NSDate date];
 	[[twitterEngine expect] getFollowedTimelineFor:@"Username" since:date startingAtPage:1];
@@ -69,28 +69,12 @@
 	OCMockObject *twitterEngine = [OCMockObject mockForClass:[MGTwitterEngine class]];
 	OCMockObject *twitterEngineFactory = [OCMockObject mockForProtocol:@protocol(TwitterEngineFactory)];
 	twitterDataSource.twitterEngineFactory = (NSObject *)twitterEngineFactory;
-	[[[twitterEngineFactory stub] andReturn: twitterEngine] create];
+	[[[twitterEngineFactory stub] andReturn: twitterEngine] createWithDelegate: OCMOCK_ANY];
 	
 	[[[twitterEngine stub] andReturn: @"ConnectionID"] getFollowedTimelineFor:OCMOCK_ANY since:OCMOCK_ANY startingAtPage:0];
 	
 	STAssertEqualStrings(@"ConnectionID", [twitterDataSource getFollowedTimelineFor:nil since:nil startingAtPage:0], nil);
 }
-	
-	
-
-//-(void) testOnlyCreatesTheTwitterEngineOnce
-//{
-//	OCMockObject *twitterEngineFactory = [OCMockObject mockForProtocol:@protocol(TwitterEngineFactory)];
-//	twitterDataSource.twitterEngineFactory = (NSObject *)twitterEngineFactory;
-//	
-//	[[twitterEngineFactory expect] create];
-//	
-//	[twitterDataSource getFollowedTimelineFor:nil since:nil startingAtPage:0];
-//	[twitterDataSource getFollowedTimelineFor:nil since:nil startingAtPage:0];
-//	
-//	[twitterEngineFactory verify];
-//}
-
 	
 
 @end

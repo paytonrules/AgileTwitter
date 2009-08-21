@@ -21,7 +21,7 @@
 
 -(NSString *)getFollowedTimelineFor:(NSString *)username since:(NSDate *)date startingAtPage:(int)pageNum
 {
-	MGTwitterEngine *engine = [twitterEngineFactory create];
+	MGTwitterEngine *engine = [twitterEngineFactory createWithDelegate:self];
 	
 	return [engine getFollowedTimelineFor:username since:date startingAtPage:pageNum];
 }
