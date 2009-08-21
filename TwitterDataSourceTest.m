@@ -77,4 +77,16 @@
 	STAssertEqualStrings(@"ConnectionID", [twitterDataSource getFollowedTimelineSince:nil startingAtPage:0], nil);
 }
 
+//-statusesReceived:forRequest
+-(void) testWhenStatusesAreReceivedRefreshTheTableView
+{
+	OCMockObject *tableView = [OCMockObject mockForClass:[UITableView class]];
+	twitterDataSource.tableView = (UITableView *)tableView;
+	[[tableView expect] reloadData];
+	
+	[twitterDataSource statusesReceived:nil forRequest:nil];
+	
+	[tableView verify];
+}
+
 @end
