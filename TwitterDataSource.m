@@ -1,6 +1,9 @@
 #import "TwitterDataSource.h"
+#import "MGTwitterEngine.h"
 
 @implementation TwitterDataSource
+
+@synthesize twitterEngineFactory;
 
 -(UITableViewCell *)tableView: (UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -14,6 +17,18 @@
 	}
 	
 	return cell;
+}
+
+-(NSString *)getFollowedTimelineFor:(NSString *)username since:(NSDate *)date startingAtPage:(int)pageNum
+{
+	MGTwitterEngine *engine = [twitterEngineFactory create];
+	
+	return [engine getFollowedTimelineFor:username since:date startingAtPage:pageNum];
+}
+-(void) dealloc
+{
+	[twitterEngineFactory release];
+	[super dealloc];
 }
 
 @end

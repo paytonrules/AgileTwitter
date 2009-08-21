@@ -1,14 +1,8 @@
-//
-//  AgileTwitterViewController.m
-//  AgileTwitter
-//
-//  Created by Eric Smith on 8/16/09.
-//  Copyright 8th Light 2009. All rights reserved.
-//
-
 #import "AgileTwitterViewController.h"
 
 @implementation AgileTwitterViewController
+
+@synthesize twitterDataSource;
 
 
 
@@ -29,12 +23,11 @@
 */
 
 
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)viewDidLoad 
+{
+	[super viewDidLoad];
+	[twitterDataSource getFollowedTimelineFor:nil since:nil startingAtPage:0];
 }
-*/
 
 
 /*

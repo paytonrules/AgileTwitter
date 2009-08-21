@@ -14,6 +14,7 @@
 		078A05B6103C9D5A0052BF91 /* TwitterDataSourceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07019AC0103ACA30004D8367 /* TwitterDataSourceTest.m */; };
 		078A05C8103C9E450052BF91 /* TwitterDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 07019AD5103ACAD3004D8367 /* TwitterDataSource.m */; };
 		078A063B103CAC450052BF91 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078A063A103CAC450052BF91 /* OCMock.framework */; };
+		07B793D7103E109B00B5CA5A /* AgileTwitterViewControlllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B793D6103E109B00B5CA5A /* AgileTwitterViewControlllerTest.m */; };
 		07EAA3EE103D6A65009D5CE4 /* MGTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EAA3CE103D6A65009D5CE4 /* MGTwitterEngine.m */; };
 		07EAA3EF103D6A65009D5CE4 /* MGTwitterHTTPURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EAA3D3103D6A65009D5CE4 /* MGTwitterHTTPURLConnection.m */; };
 		07EAA3F0103D6A65009D5CE4 /* MGTwitterLibXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EAA3D5103D6A65009D5CE4 /* MGTwitterLibXMLParser.m */; };
@@ -44,6 +45,7 @@
 		07EAA409103D6A65009D5CE4 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EAA3ED103D6A65009D5CE4 /* NSString+UUID.m */; };
 		07EAA40C103D6AEC009D5CE4 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EAA40B103D6AEC009D5CE4 /* libxml2.2.dylib */; };
 		07EAA40D103D6AEC009D5CE4 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EAA40B103D6AEC009D5CE4 /* libxml2.2.dylib */; };
+		07EAA4AB103D7BA5009D5CE4 /* AgileTwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* AgileTwitterViewController.m */; };
 		1D3623260D0F684500981E51 /* AgileTwitterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AgileTwitterAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -68,6 +70,8 @@
 		078A05A2103C98A70052BF91 /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMSenTestCase.m; sourceTree = "<group>"; };
 		078A05A6103C98BE0052BF91 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		078A063A103CAC450052BF91 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = Frameworks/OCMock.framework; sourceTree = "<group>"; };
+		07B793D5103E109B00B5CA5A /* AgileTwitterViewControlllerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgileTwitterViewControlllerTest.h; sourceTree = "<group>"; };
+		07B793D6103E109B00B5CA5A /* AgileTwitterViewControlllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgileTwitterViewControlllerTest.m; sourceTree = "<group>"; };
 		07EAA3CD103D6A65009D5CE4 /* MGTwitterEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterEngine.h; path = "MGTwitterEngine-1.0.8/MGTwitterEngine.h"; sourceTree = "<group>"; };
 		07EAA3CE103D6A65009D5CE4 /* MGTwitterEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGTwitterEngine.m; path = "MGTwitterEngine-1.0.8/MGTwitterEngine.m"; sourceTree = "<group>"; };
 		07EAA3CF103D6A65009D5CE4 /* MGTwitterEngine_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterEngine_Prefix.pch; path = "MGTwitterEngine-1.0.8/MGTwitterEngine_Prefix.pch"; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 		07EAA3EC103D6A65009D5CE4 /* NSString+UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+UUID.h"; path = "MGTwitterEngine-1.0.8/NSString+UUID.h"; sourceTree = "<group>"; };
 		07EAA3ED103D6A65009D5CE4 /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+UUID.m"; path = "MGTwitterEngine-1.0.8/NSString+UUID.m"; sourceTree = "<group>"; };
 		07EAA40B103D6AEC009D5CE4 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		07EAA4B0103D7C55009D5CE4 /* TwitterEngineFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterEngineFactory.h; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* AgileTwitterAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgileTwitterAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AgileTwitterAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgileTwitterAppDelegate.m; sourceTree = "<group>"; };
@@ -146,6 +151,8 @@
 			children = (
 				07019ABF103ACA30004D8367 /* TwitterDataSourceTest.h */,
 				07019AC0103ACA30004D8367 /* TwitterDataSourceTest.m */,
+				07B793D5103E109B00B5CA5A /* AgileTwitterViewControlllerTest.h */,
+				07B793D6103E109B00B5CA5A /* AgileTwitterViewControlllerTest.m */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -203,6 +210,14 @@
 			name = MGTwitter;
 			sourceTree = "<group>";
 		};
+		07EAA4AF103D7C38009D5CE4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				07EAA4B0103D7C55009D5CE4 /* TwitterEngineFactory.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +243,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				07EAA4AF103D7C38009D5CE4 /* Protocols */,
 				07EAA2C2103D68CA009D5CE4 /* MGTwitter */,
 				078A059A103C98730052BF91 /* GoogleToolbox */,
 				075AB703103AC6FF007F6780 /* Tests */,
@@ -368,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07EAA4AB103D7BA5009D5CE4 /* AgileTwitterViewController.m in Sources */,
 				078A05C8103C9E450052BF91 /* TwitterDataSource.m in Sources */,
 				078A05B6103C9D5A0052BF91 /* TwitterDataSourceTest.m in Sources */,
 				078A05A3103C98A70052BF91 /* GTMIPhoneUnitTestDelegate.m in Sources */,
@@ -387,6 +404,7 @@
 				07EAA3F9103D6A65009D5CE4 /* MGTwitterXMLParser.m in Sources */,
 				07EAA3FA103D6A65009D5CE4 /* NSData+Base64.m in Sources */,
 				07EAA3FB103D6A65009D5CE4 /* NSString+UUID.m in Sources */,
+				07B793D7103E109B00B5CA5A /* AgileTwitterViewControlllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +504,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = AgileTwitter_Prefix.pch;
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				INFOPLIST_FILE = "AgileTwitter-Info.plist";
 				PRODUCT_NAME = AgileTwitter;
 			};
