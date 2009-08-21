@@ -6,6 +6,7 @@
 @interface TwitterDataSource : NSObject<UITableViewDataSource, MGTwitterEngineDelegate> {
 	IBOutlet NSObject<TwitterEngineFactory> *twitterEngineFactory;
 	IBOutlet UITableView										*tableView;
+	NSArray																  *tweets;
 }
 
 @property(nonatomic, retain) NSObject<TwitterEngineFactory> *twitterEngineFactory;

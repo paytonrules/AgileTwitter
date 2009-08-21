@@ -60,7 +60,17 @@
 
 - (void)statusesReceived:(NSArray *)statuses forRequest:(NSString *)identifier
 {
-    NSLog(@"Got statuses:\r%@", statuses);
+    NSLog(@"Got statuses:");
+	NSLog(@"Now loop through them:");
+	
+	NSEnumerator *enumerator = [statuses objectEnumerator];
+	NSDictionary *statusObject;
+	
+	while (statusObject = [enumerator nextObject]) {
+		NSLog(@"%@", [statusObject objectForKey:@"text"]);
+    /* code to act on each element as it is returned */
+	}
+	
 }
 
 

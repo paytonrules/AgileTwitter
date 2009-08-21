@@ -77,7 +77,6 @@
 	STAssertEqualStrings(@"ConnectionID", [twitterDataSource getFollowedTimelineSince:nil startingAtPage:0], nil);
 }
 
-//-statusesReceived:forRequest
 -(void) testWhenStatusesAreReceivedRefreshTheTableView
 {
 	OCMockObject *tableView = [OCMockObject mockForClass:[UITableView class]];
@@ -87,6 +86,31 @@
 	[twitterDataSource statusesReceived:nil forRequest:nil];
 	
 	[tableView verify];
+}
+
+-(void) testBuildsATableCellForAllTheStatus
+{
+	OCMockObject *tableView = [OCMockObject niceMockForClass:[UITableView class]];
+	NSDictionary *status = [NSDictionary dictionaryWithObject:@"I am a tweet!" forKey:@"text"];
+	NSArray *array = [NSArray arrayWithObject:status];
+	
+	[twitterDataSource statusesReceived:array forRequest:nil];
+	
+	UITableViewCell *cell = [twitterDataSource tableView:(UITableView *)tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+	STAssertEqualStrings(cell.textLabel.text, @"I am a tweet!", nil);
+}
+
+-(void) testBuildsACellForAllTheStatuses
+{
+	OCMockObject *tableView = [OCMockObject niceMockForClass:[UITableView class]];
+	NSDictionary *status1 = [NSDictionary dictionaryWithObject:@"I am a tweet!" forKey:@"text"];
+	NSDictionary *status2 = [NSDictionary dictionaryWithObject:@"I am also a tweet!" forKey:@"text"];
+	NSArray *array = [NSArray arrayWithObjects:status1, status2, nil];
+
+	[twitterDataSource statusesReceived:array forRequest:nil];
+	
+	UITableViewCell *cell = [twitterDataSource tableView:(UITableView *)tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]];
+	STAssertEqualStrings(cell.textLabel.text, @"I am also a tweet!", nil);
 }
 
 @end

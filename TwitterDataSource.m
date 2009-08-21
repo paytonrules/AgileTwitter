@@ -15,6 +15,9 @@
 	{
 		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:twitterCellIdentifier] autorelease];
 	}
+
+	NSDictionary *tweet = [tweets objectAtIndex:[indexPath row]];
+	cell.textLabel.text = [tweet objectForKey:@"text"];
 	
 	return cell;
 }
@@ -33,6 +36,7 @@
 
 - (void)statusesReceived:(NSArray *)statuses forRequest:(NSString *)identifier
 {
+	tweets = [NSArray arrayWithArray:statuses];
 	[tableView reloadData];
 }
 
@@ -63,6 +67,7 @@
 - (void)dealloc
 {
 	[twitterEngineFactory release];
+	[tableView release];
 	[super dealloc];
 }
 
