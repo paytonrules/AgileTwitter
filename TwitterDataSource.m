@@ -31,7 +31,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-	return 0;
+	return [tweets count];
 }
 
 - (void)statusesReceived:(NSArray *)statuses forRequest:(NSString *)identifier

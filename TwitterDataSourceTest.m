@@ -113,4 +113,16 @@
 	STAssertEqualStrings(cell.textLabel.text, @"I am also a tweet!", nil);
 }
 
+-(void) testReturnsTheNumberOfTweets
+{
+	OCMockObject *tableView = [OCMockObject niceMockForClass:[UITableView class]];
+	NSDictionary *status1 = [NSDictionary dictionaryWithObject:@"I am a tweet!" forKey:@"text"];
+	NSDictionary *status2 = [NSDictionary dictionaryWithObject:@"I am also a tweet!" forKey:@"text"];
+	NSArray *array = [NSArray arrayWithObjects:status1, status2, nil];
+	
+	[twitterDataSource statusesReceived:array forRequest:nil];
+	
+	STAssertEquals(2, [twitterDataSource tableView:(UITableView *)tableView numberOfRowsInSection:0], nil);
+}
+
 @end
