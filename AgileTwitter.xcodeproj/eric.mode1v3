@@ -197,48 +197,7 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>07E33DE71040362E00B965F9</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>TwitterDataSourceTest.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>07E33DE81040362E00B965F9</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>TwitterDataSourceTest.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>0727908810405FA200B63551</string>
-						<key>history</key>
-						<array>
-							<string>07E33E09104037DB00B965F9</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {1296, 615}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>15 90 1296 656 0 0 1920 1178 </string>
-			</dict>
-		</dict>
-	</array>
+	<array/>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -381,7 +340,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0727908710405FA200B63551</string>
+										<string>07279098104063B000B63551</string>
 										<key>history</key>
 										<array>
 											<string>07B794F0103E2FA200B5CA5A</string>
@@ -696,10 +655,9 @@
 	<array>
 		<string>07278FDE104049AC00B63551</string>
 		<string>07278FDF104049AC00B63551</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>07A4CCDB1039A0A900735496</string>
-		<string>07E33DE71040362E00B965F9</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/eric/Projects-not-8thlight/Cocoa/iPhone/AgileTwitter/AgileTwitter.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -1076,7 +1034,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
