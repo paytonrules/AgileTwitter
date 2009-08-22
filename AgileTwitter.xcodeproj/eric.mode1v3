@@ -197,7 +197,48 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array/>
+	<array>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>072791051040926B00B63551</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>AgileTwitterViewController.h</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>072791061040926B00B63551</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>AgileTwitterViewController.h</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>072791071040926B00B63551</string>
+						<key>history</key>
+						<array>
+							<string>072790FC1040925D00B63551</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {1296, 615}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>38 496 1296 656 0 0 1920 1178 </string>
+			</dict>
+		</dict>
+	</array>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -232,6 +273,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -268,30 +311,24 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
-								<string>07EAA4AF103D7C38009D5CE4</string>
-								<string>078A059A103C98730052BF91</string>
 								<string>075AB703103AC6FF007F6780</string>
 								<string>080E96DDFE201D6D7F000001</string>
-								<string>29B97317FDCFA39411CA2CEA</string>
-								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>07278F8A104037E800B63551</string>
 								<string>07278FDA104049AC00B63551</string>
-								<string>07278FED10404A5D00B63551</string>
 								<string>1C37FAAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>50</integer>
-									<integer>47</integer>
-									<integer>46</integer>
-									<integer>45</integer>
+									<integer>18</integer>
+									<integer>13</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 159}, {270, 1060}}</string>
+							<string>{{0, 0}, {270, 1060}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -321,14 +358,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TwitterDataSource.m</string>
+								<string>AgileTwitterViewController.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -336,11 +371,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TwitterDataSource.m</string>
+										<string>AgileTwitterViewController.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>072790CB104070B900B63551</string>
+										<string>072791041040926B00B63551</string>
 										<key>history</key>
 										<array>
 											<string>07B794F0103E2FA200B5CA5A</string>
@@ -364,12 +399,13 @@
 											<string>07E33DD11040362E00B965F9</string>
 											<string>07278F9F104046D100B63551</string>
 											<string>0727905E1040597F00B63551</string>
-											<string>0727906F104059BC00B63551</string>
-											<string>0727907510405D3B00B63551</string>
 											<string>0727908310405F1D00B63551</string>
 											<string>072790BB10406F3900B63551</string>
 											<string>072790BC10406F3900B63551</string>
-											<string>072790BD10406F3900B63551</string>
+											<string>072790D31040729900B63551</string>
+											<string>072791001040926B00B63551</string>
+											<string>072791011040926B00B63551</string>
+											<string>0727906F104059BC00B63551</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -471,6 +507,9 @@
 											<string>072790C010406F3900B63551</string>
 											<string>072790C110406F3900B63551</string>
 											<string>072790C210406F3900B63551</string>
+											<string>072790D41040729900B63551</string>
+											<string>072791021040926B00B63551</string>
+											<string>072791031040926B00B63551</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -670,6 +709,7 @@
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>07A4CCDB1039A0A900735496</string>
+		<string>072791051040926B00B63551</string>
 		<string>/Users/eric/Projects-not-8thlight/Cocoa/iPhone/AgileTwitter/AgileTwitter.xcodeproj</string>
 	</array>
 	<key>WindowString</key>

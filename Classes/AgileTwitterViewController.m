@@ -27,6 +27,7 @@
 {
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
+	self.twitterDataSource = nil;
 }
 
 - (void)dealloc 
