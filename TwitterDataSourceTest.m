@@ -2,6 +2,7 @@
 #import "TwitterDataSourceTest.h"
 #import "TwitterEngineFactory.h"
 #import "MGTwitterEngine.h"
+#import "TwitterStatusCell.h"
 #import <OCMock/OCMock.h>
 
 @implementation TwitterDataSourceTest
@@ -16,6 +17,11 @@
 	[twitterDataSource release];
 }
 
+-(UITableView *)mockTableView
+{
+	return (UITableView *)[OCMockObject niceMockForClass:[UITableView class]];
+}
+
 -(void) setupMockTwitterEngine
 {
 	twitterEngine = [OCMockObject mockForClass:[MGTwitterEngine class]];
@@ -26,21 +32,21 @@
 }
 
 -(void) testCellTriesForReusableCellsFirst
-{	
+{
 	OCMockObject *tableView = [OCMockObject niceMockForClass:[UITableView class]];
 	OCMockObject *mockCell = [OCMockObject niceMockForClass:[UITableViewCell class]];
 	[[[tableView stub] andReturn: mockCell] dequeueReusableCellWithIdentifier:@"TwitterCellIdentifier"];
 	
-	UITableViewCell *cell = [twitterDataSource tableView: (UITableView *)tableView cellForRowAtIndexPath:nil];
+	TwitterStatusCell *cell = (TwitterStatusCell *)[twitterDataSource tableView: (UITableView *)tableView cellForRowAtIndexPath:nil];
 	STAssertEqualObjects(cell, mockCell, nil);
 }
 
--(void) testCellIsCreatedIfThereIsNoReusableCell
+-(void) testCellIsCreatedFromNibIfThereIsNoReusableCell
 {
 	OCMockObject *tableView = [OCMockObject niceMockForClass:[UITableView class]];
 	[[[tableView stub] andReturn: nil] dequeueReusableCellWithIdentifier:@"TwitterCellIdentifier"];
 	
-	UITableViewCell *cell = [twitterDataSource tableView: (UITableView *)tableView cellForRowAtIndexPath:nil];
+	TwitterStatusCell *cell = (TwitterStatusCell *)[twitterDataSource tableView: (UITableView *)tableView cellForRowAtIndexPath:nil];
 	
 	STAssertEqualStrings(@"TwitterCellIdentifier", cell.reuseIdentifier, nil);
 }
@@ -88,7 +94,7 @@
 	[tableView verify];
 }
 
--(void) testBuildsATableCellForAllTheStatus
+-(void) testBuildsATableCellForTheStatus
 {
 	OCMockObject *tableView = [OCMockObject niceMockForClass:[UITableView class]];
 	NSDictionary *status = [NSDictionary dictionaryWithObject:@"I am a tweet!" forKey:@"text"];
@@ -96,8 +102,8 @@
 	
 	[twitterDataSource statusesReceived:array forRequest:nil];
 	
-	UITableViewCell *cell = [twitterDataSource tableView:(UITableView *)tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-	STAssertEqualStrings(cell.textLabel.text, @"I am a tweet!", nil);
+	TwitterStatusCell *cell = (TwitterStatusCell *)[twitterDataSource tableView:(UITableView *)tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+	STAssertEqualStrings(cell.tweet.text, @"I am a tweet!", nil);
 }
 
 -(void) testBuildsACellForAllTheStatuses
@@ -109,8 +115,8 @@
 
 	[twitterDataSource statusesReceived:array forRequest:nil];
 	
-	UITableViewCell *cell = [twitterDataSource tableView:(UITableView *)tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]];
-	STAssertEqualStrings(cell.textLabel.text, @"I am also a tweet!", nil);
+	TwitterStatusCell *cell = (TwitterStatusCell *)[twitterDataSource tableView:(UITableView *)tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]];
+	STAssertEqualStrings(cell.tweet.text, @"I am also a tweet!", nil);
 }
 
 -(void) testReturnsTheNumberOfTweets
@@ -125,15 +131,27 @@
 	STAssertEquals(2, [twitterDataSource tableView:(UITableView *)tableView numberOfRowsInSection:0], nil);
 }
 
--(void) testFontIsAtAReasonableLevelForTweets
+-(void) testDisplaysScreenName
 {
-	OCMockObject *tableView = [OCMockObject niceMockForClass:[UITableView class]];
-	NSDictionary *status = [NSDictionary dictionaryWithObject:@"I am a tweet - I should have a small font." forKey:@"text"];
+	NSDictionary *user = [NSDictionary dictionaryWithObject:@"agile_2009" forKey: @"screen_name"];
+	NSDictionary *status = [NSDictionary dictionaryWithObject:user forKey: @"user"];
 	NSArray *array = [NSArray arrayWithObject:status];
 	
 	[twitterDataSource statusesReceived:array forRequest:nil];
-	UITableViewCell *cell = [twitterDataSource tableView:(UITableView *)tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+	TwitterStatusCell *cell = (TwitterStatusCell *)[twitterDataSource tableView:[self mockTableView] cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
 	
-	STFail(@"Failure is here");
+	STAssertEqualStrings(@"agile_2009", cell.username.text, nil);
 }
+//
+//-(void) testStripsTweets
+//{
+//	OCMockObject *tableView = [OCMockObject niceMockForClass:[UITableView class]];
+//	NSDictionary *status = [NSDictionary dictionaryWithObject:@"    I am a stripped tweet." forKey:@"text"];
+//	NSArray *array = [NSArray arrayWithObject:status];
+//	
+//	[twitterDataSource statusesReceived:array forRequest:nil];
+//	UITableViewCell *cell = [twitterDataSource tableView:(UITableView *)tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+//
+//	STAssertEqualStrings(@"I am a stripped tweet.", cell.detailTextLabel.text, nil);
+//}
 @end

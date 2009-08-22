@@ -5,10 +5,19 @@
 
 @implementation AgileTwitterViewControlllerTest
 
+-(void) setUp
+{
+	viewController = [[AgileTwitterViewController alloc] init];
+}
+
+-(void) tearDown
+{
+	[viewController release];
+}
+
 -(void) testDataSourceIsLoadedOnViewDidLoad
 {
 	OCMockObject *mockDataSource = [OCMockObject mockForClass:[TwitterDataSource class]];
-	AgileTwitterViewController *viewController = [[AgileTwitterViewController alloc] init];
 	viewController.twitterDataSource = (TwitterDataSource *)mockDataSource;
 	
 	[[mockDataSource expect] getFollowedTimelineSince:nil startingAtPage:0];
@@ -18,5 +27,8 @@
 	[mockDataSource verify];
 }
 
-
+-(void) testReturnsHeightValueForACell
+{
+	STAssertEquals((CGFloat)kRowHeight, [viewController tableView:nil heightForRowAtIndexPath:nil], nil);
+}
 @end

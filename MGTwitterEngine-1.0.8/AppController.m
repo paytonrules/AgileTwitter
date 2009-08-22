@@ -67,7 +67,7 @@
 	NSDictionary *statusObject;
 	
 	while (statusObject = [enumerator nextObject]) {
-		NSLog(@"%@", [statusObject objectForKey:@"text"]);
+		NSLog(@"%@", statusObject);
     /* code to act on each element as it is returned */
 	}
 	
