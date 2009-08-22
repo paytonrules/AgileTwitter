@@ -3,8 +3,7 @@
 
 @implementation AgileTwitterAppDelegate
 
-@synthesize window;
-@synthesize navigationController;
+@synthesize window, navigationController, composeTweetController;
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application
 {
@@ -12,6 +11,10 @@
   [window makeKeyAndVisible];
 }
 
+- (IBAction)compose
+{
+	[navigationController pushViewController:composeTweetController animated: YES];
+}
 
 - (void)dealloc
 {
@@ -19,6 +22,5 @@
   [window release];
   [super dealloc];
 }
-
 
 @end

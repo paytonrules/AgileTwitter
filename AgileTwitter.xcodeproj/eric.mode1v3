@@ -197,48 +197,7 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>072791051040926B00B63551</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>ListTweetsViewController.h</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>072791061040926B00B63551</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>ListTweetsViewController.h</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>0727917B10409CD700B63551</string>
-						<key>history</key>
-						<array>
-							<string>072790FC1040925D00B63551</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {1296, 615}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>38 496 1296 656 0 0 1920 1178 </string>
-			</dict>
-		</dict>
-	</array>
+	<array/>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -273,6 +232,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -311,11 +272,13 @@
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>075AB703103AC6FF007F6780</string>
 								<string>080E96DDFE201D6D7F000001</string>
+								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>07278F8A104037E800B63551</string>
 								<string>07278FDA104049AC00B63551</string>
+								<string>07278FED10404A5D00B63551</string>
 								<string>07278F8B104037E800B63551</string>
-								<string>0727913F1040970600B63551</string>
+								<string>072792231040B90900B63551</string>
 								<string>1C37FAAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
@@ -323,12 +286,11 @@
 							<array>
 								<array>
 									<integer>18</integer>
-									<integer>15</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {270, 1060}}</string>
+							<string>{{0, 419}, {270, 1060}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -358,14 +320,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>AgileTwitterAppDelegate.m</string>
+								<string>ComposeTweetViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -373,11 +333,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>AgileTwitterAppDelegate.m</string>
+										<string>ComposeTweetViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0727917A10409CD700B63551</string>
+										<string>072792451040BA6E00B63551</string>
 										<key>history</key>
 										<array>
 											<string>07B794F0103E2FA200B5CA5A</string>
@@ -393,23 +353,27 @@
 											<string>0751E886103EBA2400AD87A4</string>
 											<string>07F5CE39103F2760000D7CE6</string>
 											<string>07F5CE5F103F28FB000D7CE6</string>
-											<string>07F5CE61103F28FB000D7CE6</string>
 											<string>07E33DCE1040362E00B965F9</string>
 											<string>07278F9F104046D100B63551</string>
 											<string>0727908310405F1D00B63551</string>
 											<string>072790BB10406F3900B63551</string>
 											<string>072790BC10406F3900B63551</string>
-											<string>072790D31040729900B63551</string>
-											<string>072791001040926B00B63551</string>
 											<string>072791011040926B00B63551</string>
 											<string>072791131040949D00B63551</string>
-											<string>0727911D1040962700B63551</string>
 											<string>0727911E1040962700B63551</string>
 											<string>0727911F1040962700B63551</string>
-											<string>072791201040962700B63551</string>
-											<string>0727916D10409B2B00B63551</string>
-											<string>0727917810409CD700B63551</string>
-											<string>0727916E10409B2B00B63551</string>
+											<string>072791CF1040B02400B63551</string>
+											<string>072791D01040B02400B63551</string>
+											<string>072791F11040B37C00B63551</string>
+											<string>072791F21040B37C00B63551</string>
+											<string>072791F31040B37C00B63551</string>
+											<string>072792081040B76E00B63551</string>
+											<string>0727921D1040B8C300B63551</string>
+											<string>072792241040B90900B63551</string>
+											<string>072792251040B90900B63551</string>
+											<string>072792261040B90900B63551</string>
+											<string>072792381040B9E200B63551</string>
+											<string>072792391040B9E200B63551</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -542,6 +506,55 @@
 											<string>0727916F10409B2B00B63551</string>
 											<string>0727917010409B2B00B63551</string>
 											<string>0727917910409CD700B63551</string>
+											<string>0727918E1040A02200B63551</string>
+											<string>072791921040A0A300B63551</string>
+											<string>072791931040A0A300B63551</string>
+											<string>0727919A1040A1D500B63551</string>
+											<string>0727919B1040A1D500B63551</string>
+											<string>0727919C1040A1D500B63551</string>
+											<string>0727919D1040A1D500B63551</string>
+											<string>0727919E1040A1D500B63551</string>
+											<string>072791A61040AD9100B63551</string>
+											<string>072791A71040AD9100B63551</string>
+											<string>072791A81040AD9100B63551</string>
+											<string>072791A91040AD9100B63551</string>
+											<string>072791AA1040AD9100B63551</string>
+											<string>072791AB1040AD9100B63551</string>
+											<string>072791AC1040AD9100B63551</string>
+											<string>072791AD1040AD9100B63551</string>
+											<string>072791AE1040AD9100B63551</string>
+											<string>072791B41040ADE300B63551</string>
+											<string>072791B51040ADE300B63551</string>
+											<string>072791B61040ADE300B63551</string>
+											<string>072791B71040ADE300B63551</string>
+											<string>072791B81040ADE300B63551</string>
+											<string>072791B91040ADE300B63551</string>
+											<string>072791CA1040AED400B63551</string>
+											<string>072791D21040B02400B63551</string>
+											<string>072791D31040B02400B63551</string>
+											<string>072791D41040B02400B63551</string>
+											<string>072791D51040B02400B63551</string>
+											<string>072791D61040B02400B63551</string>
+											<string>072791D71040B02400B63551</string>
+											<string>072791DD1040B08D00B63551</string>
+											<string>072791E41040B0FD00B63551</string>
+											<string>072791F51040B37C00B63551</string>
+											<string>072791F61040B37C00B63551</string>
+											<string>072791F71040B37C00B63551</string>
+											<string>072791F81040B37C00B63551</string>
+											<string>072791F91040B37C00B63551</string>
+											<string>072791FA1040B37C00B63551</string>
+											<string>072791FB1040B37C00B63551</string>
+											<string>0727920B1040B76E00B63551</string>
+											<string>0727920C1040B76E00B63551</string>
+											<string>0727921F1040B8C300B63551</string>
+											<string>072792201040B8C300B63551</string>
+											<string>072792271040B90900B63551</string>
+											<string>072792281040B90900B63551</string>
+											<string>072792291040B90900B63551</string>
+											<string>072792311040B94600B63551</string>
+											<string>0727923A1040B9E200B63551</string>
+											<string>0727923B1040B9E200B63551</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -738,11 +751,10 @@
 		<string>075AB73F103AC9DD007F6780</string>
 		<string>07278FDE104049AC00B63551</string>
 		<string>07278FDF104049AC00B63551</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>072791051040926B00B63551</string>
 		<string>07A4CCDB1039A0A900735496</string>
 		<string>/Users/eric/Projects-not-8thlight/Cocoa/iPhone/AgileTwitter/AgileTwitter.xcodeproj</string>
+		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 59 1920 1119 0 0 1920 1178 </string>
@@ -766,7 +778,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>AgileTwitterAppDelegateTest.m</string>
+								<string>AgileTwitterAppDelegate.h</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -837,7 +849,7 @@
 			<key>WindowToolGUID</key>
 			<string>07A4CCDB1039A0A900735496</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
@@ -1118,7 +1130,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

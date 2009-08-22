@@ -1,20 +1,44 @@
 #import "AgileTwitterAppDelegateTest.h"
-#import "AgileTwitterAppDelegate.h"
 #import <OCMock/OCMock.h>
 
 @implementation AgileTwitterAppDelegateTest
 
-- (void)testAppDelegateLoadsTheNavigationController
+- (void)setUp
 {
 	UIWindow *window = [[[UIWindow alloc] init] autorelease];
-	UINavigationController *navigationController = [[[UINavigationController alloc] init] autorelease];
-	AgileTwitterAppDelegate *delegate = [[[AgileTwitterAppDelegate alloc] init] autorelease];
+	navigationController = [[[UINavigationController alloc] init] autorelease];
+	delegate = [[[AgileTwitterAppDelegate alloc] init] autorelease];
 	delegate.navigationController = navigationController;
-	delegate.window = window;
-	
+	delegate.window = window;	
+}
+
+- (void)testAppDelegateLoadsTheNavigationController
+{
 	[delegate applicationDidFinishLaunching:nil];
 	
 	STAssertTrue([delegate.window.subviews containsObject:navigationController.view], @"The window should contain the navigation controller view as a subview");
+}
+
+- (void)testComposeActionLoadsComposeController
+{
+	OCMockObject *mockNavigator = [OCMockObject mockForClass:[UINavigationController class]];
+	delegate.navigationController = (UINavigationController *)mockNavigator;
+	
+	[[mockNavigator expect] pushViewController:[OCMArg any] animated: YES];
+	
+	[delegate compose];
+	
+	[mockNavigator verify];
+}
+
+- (void)testComposePushesTheComposeTweetViewOntoTheStack
+{
+	UIViewController *composeTweetController = [[[UIViewController alloc] init] autorelease];
+	delegate.composeTweetController = composeTweetController;
+	
+	[delegate compose];
+	
+	STAssertEqualObjects(delegate.navigationController.visibleViewController, composeTweetController, nil);
 }
 
 @end
