@@ -142,16 +142,5 @@
 	
 	STAssertEqualStrings(@"agile_2009", cell.username.text, nil);
 }
-//
-//-(void) testStripsTweets
-//{
-//	OCMockObject *tableView = [OCMockObject niceMockForClass:[UITableView class]];
-//	NSDictionary *status = [NSDictionary dictionaryWithObject:@"    I am a stripped tweet." forKey:@"text"];
-//	NSArray *array = [NSArray arrayWithObject:status];
-//	
-//	[twitterDataSource statusesReceived:array forRequest:nil];
-//	UITableViewCell *cell = [twitterDataSource tableView:(UITableView *)tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-//
-//	STAssertEqualStrings(@"I am a stripped tweet.", cell.detailTextLabel.text, nil);
-//}
+
 @end

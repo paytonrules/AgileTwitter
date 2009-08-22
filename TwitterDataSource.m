@@ -6,35 +6,63 @@
 
 @synthesize twitterEngineFactory, tableView;
 
-// Table View Cell delegate methods
-- (UITableViewCell *)tableView: (UITableView *)theTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-	static NSString *twitterCellIdentifier = @"TwitterCellIdentifier";
-	
-	TwitterStatusCell *cell = (TwitterStatusCell *)[theTableView dequeueReusableCellWithIdentifier:twitterCellIdentifier];
-	
-	if (cell == nil)
-	{
-		NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"TwitterStatusCell" 
-																								 owner:self
-																							 options:nil];
-		
-		// Not well tested - would need mock nib file loading - not sure its worth the effort in thise case. 
-		
-		for (id oneObject in nib)
-			if ([oneObject isKindOfClass:[TwitterStatusCell class]]) 
-				cell = (TwitterStatusCell *)oneObject;
-		
-	}
 
-	NSDictionary *tweet = [tweets objectAtIndex:[indexPath row]];
+
+
+- (TwitterStatusCell *)loadTweetAt: (NSUInteger) row intoCell: (TwitterStatusCell*) cell
+{
+	NSDictionary *tweet = [tweets objectAtIndex:row];
 	if (tweet != nil)
 	{
 		cell.tweet.text = [tweet objectForKey:@"text"];
 		cell.username.text = [[tweet objectForKey:@"user"] objectForKey:@"screen_name"];
 	}
 	
+	return cell;	
+}
+
+
+
+
+
+// Table View Cell delegate methods
+- (UITableViewCell *)tableView: (UITableView *)theTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	TwitterStatusCell *cell;
+  cell = [self getTableCellForTableView: theTableView];
+	
+	[self loadTweetAt: [indexPath row] intoCell: cell];
 	return cell;
+}
+
+- (TwitterStatusCell *)getTableCellForTableView: (UITableView *) theTableView  
+{
+  static NSString *twitterCellIdentifier = @"TwitterCellIdentifier";
+	
+	TwitterStatusCell *cell = (TwitterStatusCell *)[theTableView dequeueReusableCellWithIdentifier:twitterCellIdentifier];
+	
+	if (cell == nil)
+	{
+		cell = [self getNewCellFromNib];
+	}
+  return cell;
+}
+	
+- (TwitterStatusCell *)getNewCellFromNib
+{
+	NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"TwitterStatusCell" 
+																							 owner:self
+																						 options:nil];
+	
+	for (id oneObject in nib)
+	{
+		if ([oneObject isKindOfClass:[TwitterStatusCell class]]) 
+		{
+			return (TwitterStatusCell *)oneObject;
+		}
+	}
+	
+	return nil;  // your nib file is wrong
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
