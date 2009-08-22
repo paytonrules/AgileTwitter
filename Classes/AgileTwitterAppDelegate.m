@@ -1,32 +1,23 @@
-//
-//  AgileTwitterAppDelegate.m
-//  AgileTwitter
-//
-//  Created by Eric Smith on 8/16/09.
-//  Copyright 8th Light 2009. All rights reserved.
-//
-
 #import "AgileTwitterAppDelegate.h"
-#import "ListTweetsViewCOntroller.h"
+#import "ListTweetsViewController.h"
 
 @implementation AgileTwitterAppDelegate
 
 @synthesize window;
-@synthesize viewController;
+@synthesize navigationController;
 
-
-- (void)applicationDidFinishLaunching:(UIApplication *)application {    
-    
-    // Override point for customization after app launch    
-    [window addSubview:viewController.view];
-    [window makeKeyAndVisible];
+- (void)applicationDidFinishLaunching:(UIApplication *)application
+{
+  [window addSubview:navigationController.view];
+  [window makeKeyAndVisible];
 }
 
 
-- (void)dealloc {
-    [viewController release];
-    [window release];
-    [super dealloc];
+- (void)dealloc
+{
+	[navigationController release];
+  [window release];
+  [super dealloc];
 }
 
 

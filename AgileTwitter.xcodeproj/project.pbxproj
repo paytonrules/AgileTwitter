@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		07019AD7103ACAD3004D8367 /* TwitterDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 07019AD5103ACAD3004D8367 /* TwitterDataSource.m */; };
 		07278FE910404A5400B63551 /* TwitterStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E33DB11040333B00B965F9 /* TwitterStatusCell.m */; };
+		072791191040950600B63551 /* AgileTwitterAppDelegateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 072791181040950600B63551 /* AgileTwitterAppDelegateTest.m */; };
+		0727913D104096F300B63551 /* AgileTwitterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AgileTwitterAppDelegate.m */; };
 		078A05A3103C98A70052BF91 /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 078A059F103C98A70052BF91 /* GTMIPhoneUnitTestDelegate.m */; };
 		078A05A4103C98A70052BF91 /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 078A05A0103C98A70052BF91 /* GTMIPhoneUnitTestMain.m */; };
 		078A05A5103C98A70052BF91 /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 078A05A2103C98A70052BF91 /* GTMSenTestCase.m */; };
@@ -69,6 +71,8 @@
 		07019AC0103ACA30004D8367 /* TwitterDataSourceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterDataSourceTest.m; sourceTree = "<group>"; };
 		07019AD4103ACAD3004D8367 /* TwitterDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwitterDataSource.h; path = ../TwitterDataSource.h; sourceTree = "<group>"; };
 		07019AD5103ACAD3004D8367 /* TwitterDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TwitterDataSource.m; path = ../TwitterDataSource.m; sourceTree = "<group>"; };
+		072791171040950600B63551 /* AgileTwitterAppDelegateTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgileTwitterAppDelegateTest.h; sourceTree = "<group>"; };
+		072791181040950600B63551 /* AgileTwitterAppDelegateTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgileTwitterAppDelegateTest.m; sourceTree = "<group>"; };
 		075AB6F3103A1E3D007F6780 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		078A058C103C98570052BF91 /* UnitTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		078A059E103C98A70052BF91 /* GTMIPhoneUnitTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMIPhoneUnitTestDelegate.h; sourceTree = "<group>"; };
@@ -174,6 +178,8 @@
 				07B794B1103E2A5F00B5CA5A /* ConcreteTwitterEngineFactoryTest.m */,
 				07E33DAA1040318B00B965F9 /* TwitterStatusCellTest.h */,
 				07E33DAB1040318B00B965F9 /* TwitterStatusCellTest.m */,
+				072791171040950600B63551 /* AgileTwitterAppDelegateTest.h */,
+				072791181040950600B63551 /* AgileTwitterAppDelegateTest.m */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -413,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07EAA4AB103D7BA5009D5CE4 /* ListTweetsViewController.m in Sources */,
+				0727913D104096F300B63551 /* AgileTwitterAppDelegate.m in Sources */,
 				078A05C8103C9E450052BF91 /* TwitterDataSource.m in Sources */,
 				078A05B6103C9D5A0052BF91 /* TwitterDataSourceTest.m in Sources */,
 				078A05A3103C98A70052BF91 /* GTMIPhoneUnitTestDelegate.m in Sources */,
@@ -437,6 +444,7 @@
 				07B794B8103E2AFB00B5CA5A /* ConcreteTwitterEngineFactory.m in Sources */,
 				07E33DAC1040318B00B965F9 /* TwitterStatusCellTest.m in Sources */,
 				07E33DB21040333B00B965F9 /* TwitterStatusCell.m in Sources */,
+				072791191040950600B63551 /* AgileTwitterAppDelegateTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
