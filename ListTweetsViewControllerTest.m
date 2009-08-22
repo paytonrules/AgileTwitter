@@ -1,13 +1,13 @@
-#import "AgileTwitterViewControlllerTest.h"
-#import "AgileTwitterViewController.h"
+#import "ListTweetsViewControllerTest.h"
+#import "ListTweetsViewCOntroller.h"
 #import "TwitterDataSource.h"
 #import <OCMock/OCMock.h>
 
-@implementation AgileTwitterViewControlllerTest
+@implementation ListTweetsViewControllerTest
 
 -(void) setUp
 {
-	viewController = [[AgileTwitterViewController alloc] init];
+	viewController = [[ListTweetsViewController alloc] init];
 }
 
 -(void) tearDown

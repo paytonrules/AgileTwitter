@@ -1,6 +1,6 @@
-#import "AgileTwitterViewController.h"
+#import "ListTweetsViewCOntroller.h"
 
-@implementation AgileTwitterViewController
+@implementation ListTweetsViewController
 
 @synthesize twitterDataSource;
 

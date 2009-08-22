@@ -8,15 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@class AgileTwitterViewController;
+@class ListTweetsViewController;
 
 @interface AgileTwitterAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
-    AgileTwitterViewController *viewController;
+    ListTweetsViewController *viewController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet AgileTwitterViewController *viewController;
+@property (nonatomic, retain) IBOutlet ListTweetsViewController *viewController;
 
 @end
 

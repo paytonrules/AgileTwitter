@@ -2,7 +2,7 @@
 #import "TwitterDataSource.h"
 
 #define kRowHeight 100
-@interface AgileTwitterViewController : UITableViewController<UITableViewDelegate> {
+@interface ListTweetsViewController : UITableViewController<UITableViewDelegate> {
 	IBOutlet TwitterDataSource *twitterDataSource;
 }
 

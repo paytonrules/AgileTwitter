@@ -204,7 +204,7 @@
 				<key>PBXProjectModuleGUID</key>
 				<string>072791051040926B00B63551</string>
 				<key>PBXProjectModuleLabel</key>
-				<string>AgileTwitterViewController.h</string>
+				<string>ListTweetsViewController.h</string>
 				<key>PBXSplitModuleInNavigatorKey</key>
 				<dict>
 					<key>Split0</key>
@@ -212,11 +212,11 @@
 						<key>PBXProjectModuleGUID</key>
 						<string>072791061040926B00B63551</string>
 						<key>PBXProjectModuleLabel</key>
-						<string>AgileTwitterViewController.h</string>
+						<string>ListTweetsViewController.h</string>
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>072791071040926B00B63551</string>
+						<string>072791161040949D00B63551</string>
 						<key>history</key>
 						<array>
 							<string>072790FC1040925D00B63551</string>
@@ -273,8 +273,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -322,8 +320,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>18</integer>
-									<integer>13</integer>
+									<integer>8</integer>
+									<integer>4</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -358,12 +356,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>AgileTwitterViewController.h</string>
+								<string>ListTweetsViewControllerTest.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -371,11 +371,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>AgileTwitterViewController.h</string>
+										<string>ListTweetsViewControllerTest.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>072791041040926B00B63551</string>
+										<string>072791151040949D00B63551</string>
 										<key>history</key>
 										<array>
 											<string>07B794F0103E2FA200B5CA5A</string>
@@ -398,14 +398,14 @@
 											<string>07E33DD01040362E00B965F9</string>
 											<string>07E33DD11040362E00B965F9</string>
 											<string>07278F9F104046D100B63551</string>
-											<string>0727905E1040597F00B63551</string>
 											<string>0727908310405F1D00B63551</string>
 											<string>072790BB10406F3900B63551</string>
 											<string>072790BC10406F3900B63551</string>
 											<string>072790D31040729900B63551</string>
 											<string>072791001040926B00B63551</string>
 											<string>072791011040926B00B63551</string>
-											<string>0727906F104059BC00B63551</string>
+											<string>072791131040949D00B63551</string>
+											<string>0727905E1040597F00B63551</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -510,6 +510,7 @@
 											<string>072790D41040729900B63551</string>
 											<string>072791021040926B00B63551</string>
 											<string>072791031040926B00B63551</string>
+											<string>072791141040949D00B63551</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
