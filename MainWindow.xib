@@ -8,8 +8,8 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="15"/>
-			<integer value="31"/>
+			<integer value="16"/>
+			<integer value="36"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -45,12 +45,12 @@
 				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
 			</object>
-			<object class="IBUINavigationController" id="638261763">
+			<object class="IBUINavigationController" id="800852447">
 				<object class="IBUISimulatedNavigationBarMetrics" key="IBUISimulatedTopBarMetrics">
 					<bool key="IBUIPrompted">NO</bool>
 				</object>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
-				<object class="IBUINavigationBar" key="IBUINavigationBar" id="440133712">
+				<object class="IBUINavigationBar" key="IBUINavigationBar" id="444988169">
 					<nil key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<string key="NSFrame">{{0, -44}, {0, 44}}</string>
@@ -60,27 +60,46 @@
 				</object>
 				<object class="NSArray" key="IBUIViewControllers">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<object class="IBUIViewController" id="579230754">
-						<object class="IBUINavigationItem" key="IBUINavigationItem" id="693657567">
+					<object class="IBUIViewController" id="1026377563">
+						<object class="IBUINavigationItem" key="IBUINavigationItem" id="736976691">
 							<reference key="IBUINavigationBar"/>
 							<string key="IBUITitle">Agile Twitter</string>
-							<object class="IBUIBarButtonItem" key="IBUILeftBarButtonItem" id="381312466">
+							<object class="IBUIBarButtonItem" key="IBUIBackBarButtonItem" id="876759252">
+								<string key="IBUITitle">Cancel</string>
+								<int key="IBUIStyle">1</int>
+							</object>
+							<object class="IBUIBarButtonItem" key="IBUILeftBarButtonItem" id="522961862">
 								<int key="IBUIStyle">1</int>
 								<int key="IBUISystemItemIdentifier">13</int>
 							</object>
-							<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="577106679">
+							<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="408684479">
 								<int key="IBUIStyle">1</int>
 								<int key="IBUISystemItemIdentifier">7</int>
 							</object>
 						</object>
-						<reference key="IBUIParentViewController" ref="638261763"/>
+						<reference key="IBUIParentViewController" ref="800852447"/>
 						<string key="IBUINibName">ListTweetsViewController</string>
 					</object>
 				</object>
 			</object>
-			<object class="IBUIViewController" id="987047479">
+			<object class="IBUIViewController" id="129978029">
 				<bool key="IBUIAutoresizesArchivedViewToFullSize">NO</bool>
+				<string key="IBUITitle">Compose Tweet</string>
+				<object class="NSArray" key="IBUIToolbarItems">
+					<bool key="EncodedWithXMLCoder">YES</bool>
+				</object>
+				<object class="IBUINavigationItem" key="IBUINavigationItem" id="354872991">
+					<reference key="IBUINavigationBar"/>
+					<string key="IBUITitle">Compose Tweet</string>
+					<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="1049113735">
+						<string key="IBUITitle">Tweet</string>
+						<int key="IBUIStyle">1</int>
+					</object>
+				</object>
 				<string key="IBUINibName">ComposeTweet</string>
+				<object class="IBUISimulatedNavigationBarMetrics" key="IBUISimulatedTopBarMetrics">
+					<bool key="IBUIPrompted">NO</bool>
+				</object>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
 			</object>
 		</object>
@@ -107,14 +126,14 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">navigationController</string>
 						<reference key="source" ref="664661524"/>
-						<reference key="destination" ref="638261763"/>
+						<reference key="destination" ref="800852447"/>
 					</object>
 					<int key="connectionID">19</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">compose</string>
-						<reference key="source" ref="577106679"/>
+						<reference key="source" ref="408684479"/>
 						<reference key="destination" ref="664661524"/>
 					</object>
 					<int key="connectionID">30</int>
@@ -123,7 +142,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">composeTweetController</string>
 						<reference key="source" ref="664661524"/>
-						<reference key="destination" ref="987047479"/>
+						<reference key="destination" ref="129978029"/>
 					</object>
 					<int key="connectionID">32</int>
 				</object>
@@ -133,7 +152,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<object class="IBObjectRecord">
 						<int key="objectID">0</int>
-						<object class="NSArray" key="object" id="901813518">
+						<object class="NSArray" key="object" id="373527186">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 						</object>
 						<reference key="children" ref="1000"/>
@@ -142,73 +161,97 @@
 					<object class="IBObjectRecord">
 						<int key="objectID">-1</int>
 						<reference key="object" ref="841351856"/>
-						<reference key="parent" ref="901813518"/>
+						<reference key="parent" ref="373527186"/>
 						<string type="base64-UTF8" key="objectName">RmlsZSdzIE93bmVyA</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">3</int>
 						<reference key="object" ref="664661524"/>
-						<reference key="parent" ref="901813518"/>
+						<reference key="parent" ref="373527186"/>
 						<string key="objectName">AgileTwitter App Delegate</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">-2</int>
 						<reference key="object" ref="427554174"/>
-						<reference key="parent" ref="901813518"/>
+						<reference key="parent" ref="373527186"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">12</int>
 						<reference key="object" ref="117978783"/>
-						<reference key="parent" ref="901813518"/>
+						<reference key="parent" ref="373527186"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">15</int>
-						<reference key="object" ref="638261763"/>
+						<reference key="object" ref="800852447"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="440133712"/>
-							<reference ref="579230754"/>
+							<reference ref="444988169"/>
+							<reference ref="1026377563"/>
 						</object>
-						<reference key="parent" ref="901813518"/>
+						<reference key="parent" ref="373527186"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">17</int>
-						<reference key="object" ref="440133712"/>
-						<reference key="parent" ref="638261763"/>
+						<reference key="object" ref="444988169"/>
+						<reference key="parent" ref="800852447"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">16</int>
-						<reference key="object" ref="579230754"/>
+						<reference key="object" ref="1026377563"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="693657567"/>
+							<reference ref="736976691"/>
 						</object>
-						<reference key="parent" ref="638261763"/>
+						<reference key="parent" ref="800852447"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">18</int>
-						<reference key="object" ref="693657567"/>
+						<reference key="object" ref="736976691"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="381312466"/>
-							<reference ref="577106679"/>
+							<reference ref="522961862"/>
+							<reference ref="408684479"/>
+							<reference ref="876759252"/>
 						</object>
-						<reference key="parent" ref="579230754"/>
+						<reference key="parent" ref="1026377563"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">24</int>
-						<reference key="object" ref="381312466"/>
-						<reference key="parent" ref="693657567"/>
+						<reference key="object" ref="522961862"/>
+						<reference key="parent" ref="736976691"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">22</int>
-						<reference key="object" ref="577106679"/>
-						<reference key="parent" ref="693657567"/>
+						<reference key="object" ref="408684479"/>
+						<reference key="parent" ref="736976691"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">31</int>
-						<reference key="object" ref="987047479"/>
-						<reference key="parent" ref="901813518"/>
+						<reference key="object" ref="129978029"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="354872991"/>
+						</object>
+						<reference key="parent" ref="373527186"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">36</int>
+						<reference key="object" ref="354872991"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="1049113735"/>
+						</object>
+						<reference key="parent" ref="129978029"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">39</int>
+						<reference key="object" ref="1049113735"/>
+						<reference key="parent" ref="354872991"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">42</int>
+						<reference key="object" ref="876759252"/>
+						<reference key="parent" ref="736976691"/>
 					</object>
 				</object>
 			</object>
@@ -233,6 +276,8 @@
 					<string>31.CustomClassName</string>
 					<string>31.IBEditorWindowLastContentRect</string>
 					<string>31.IBPluginDependency</string>
+					<string>36.IBPluginDependency</string>
+					<string>39.IBPluginDependency</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -252,6 +297,8 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>ComposeTweetViewController</string>
 					<string>{{833, 291}, {320, 480}}</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				</object>
 			</object>
@@ -275,7 +322,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">32</int>
+			<int key="maxID">42</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
