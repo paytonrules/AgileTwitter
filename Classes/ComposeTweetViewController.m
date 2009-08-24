@@ -3,6 +3,13 @@
 
 @implementation ComposeTweetViewController
 
+@synthesize textView, twitterConnection;
+
+-(IBAction) tweet
+{
+	[twitterConnection tweet:textView.text];
+}
+
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
@@ -15,8 +22,15 @@
 	// e.g. self.myOutlet = nil;
 }
 
-
-- (void)dealloc {
-    [super dealloc];
+- (void)viewDidAppear:(BOOL)animated
+{
+	[textView becomeFirstResponder];
 }
+
+- (void)dealloc
+{
+	[twitterConnection release];
+	[textView release];
+	[super dealloc];
+}	
 @end

@@ -15,6 +15,7 @@
 		072792181040B89700B63551 /* ComposeTweetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 072792161040B89700B63551 /* ComposeTweetViewController.m */; };
 		0727922C1040B92000B63551 /* ComposeTweet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0727922B1040B92000B63551 /* ComposeTweet.xib */; };
 		072792351040B9DB00B63551 /* ComposeTweetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 072792161040B89700B63551 /* ComposeTweetViewController.m */; };
+		072792DE1040E64A00B63551 /* TwitterConnectionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 072792DD1040E64A00B63551 /* TwitterConnectionTest.m */; };
 		078A05A3103C98A70052BF91 /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 078A059F103C98A70052BF91 /* GTMIPhoneUnitTestDelegate.m */; };
 		078A05A4103C98A70052BF91 /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 078A05A0103C98A70052BF91 /* GTMIPhoneUnitTestMain.m */; };
 		078A05A5103C98A70052BF91 /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 078A05A2103C98A70052BF91 /* GTMSenTestCase.m */; };
@@ -25,6 +26,8 @@
 		07B794B2103E2A5F00B5CA5A /* ConcreteTwitterEngineFactoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B794B1103E2A5F00B5CA5A /* ConcreteTwitterEngineFactoryTest.m */; };
 		07B794B8103E2AFB00B5CA5A /* ConcreteTwitterEngineFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B794B7103E2AFB00B5CA5A /* ConcreteTwitterEngineFactory.m */; };
 		07B794B9103E2AFB00B5CA5A /* ConcreteTwitterEngineFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B794B7103E2AFB00B5CA5A /* ConcreteTwitterEngineFactory.m */; };
+		07C19CE31042B19D00FE5731 /* TwitterConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C19CE21042B19D00FE5731 /* TwitterConnection.m */; };
+		07C19CE41042B19D00FE5731 /* TwitterConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C19CE21042B19D00FE5731 /* TwitterConnection.m */; };
 		07E33D9710402BED00B965F9 /* TwitterStatusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E33D9610402BED00B965F9 /* TwitterStatusCell.xib */; };
 		07E33DAC1040318B00B965F9 /* TwitterStatusCellTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E33DAB1040318B00B965F9 /* TwitterStatusCellTest.m */; };
 		07E33DB21040333B00B965F9 /* TwitterStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E33DB11040333B00B965F9 /* TwitterStatusCell.m */; };
@@ -83,6 +86,8 @@
 		072792161040B89700B63551 /* ComposeTweetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeTweetViewController.m; sourceTree = "<group>"; };
 		072792171040B89700B63551 /* ComposeTweetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComposeTweetViewController.xib; sourceTree = "<group>"; };
 		0727922B1040B92000B63551 /* ComposeTweet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComposeTweet.xib; sourceTree = "<group>"; };
+		072792DC1040E64A00B63551 /* TwitterConnectionTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterConnectionTest.h; sourceTree = "<group>"; };
+		072792DD1040E64A00B63551 /* TwitterConnectionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterConnectionTest.m; sourceTree = "<group>"; };
 		075AB6F3103A1E3D007F6780 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		078A058C103C98570052BF91 /* UnitTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		078A059E103C98A70052BF91 /* GTMIPhoneUnitTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMIPhoneUnitTestDelegate.h; sourceTree = "<group>"; };
@@ -98,6 +103,8 @@
 		07B794B1103E2A5F00B5CA5A /* ConcreteTwitterEngineFactoryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteTwitterEngineFactoryTest.m; sourceTree = "<group>"; };
 		07B794B6103E2AFB00B5CA5A /* ConcreteTwitterEngineFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteTwitterEngineFactory.h; sourceTree = "<group>"; };
 		07B794B7103E2AFB00B5CA5A /* ConcreteTwitterEngineFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteTwitterEngineFactory.m; sourceTree = "<group>"; };
+		07C19CE11042B19D00FE5731 /* TwitterConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterConnection.h; sourceTree = "<group>"; };
+		07C19CE21042B19D00FE5731 /* TwitterConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterConnection.m; sourceTree = "<group>"; };
 		07E33D9610402BED00B965F9 /* TwitterStatusCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwitterStatusCell.xib; sourceTree = "<group>"; };
 		07E33DAA1040318B00B965F9 /* TwitterStatusCellTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterStatusCellTest.h; sourceTree = "<group>"; };
 		07E33DAB1040318B00B965F9 /* TwitterStatusCellTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterStatusCellTest.m; sourceTree = "<group>"; };
@@ -193,6 +200,8 @@
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				072791171040950600B63551 /* AgileTwitterAppDelegateTest.h */,
 				072791181040950600B63551 /* AgileTwitterAppDelegateTest.m */,
+				072792DC1040E64A00B63551 /* TwitterConnectionTest.h */,
+				072792DD1040E64A00B63551 /* TwitterConnectionTest.m */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -274,6 +283,8 @@
 				07B794B7103E2AFB00B5CA5A /* ConcreteTwitterEngineFactory.m */,
 				07E33DB01040333B00B965F9 /* TwitterStatusCell.h */,
 				07E33DB11040333B00B965F9 /* TwitterStatusCell.m */,
+				07C19CE11042B19D00FE5731 /* TwitterConnection.h */,
+				07C19CE21042B19D00FE5731 /* TwitterConnection.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -464,6 +475,8 @@
 				072791191040950600B63551 /* AgileTwitterAppDelegateTest.m in Sources */,
 				072792051040B73400B63551 /* ComposeTweetViewControllerTest.m in Sources */,
 				072792181040B89700B63551 /* ComposeTweetViewController.m in Sources */,
+				072792DE1040E64A00B63551 /* TwitterConnectionTest.m in Sources */,
+				07C19CE31042B19D00FE5731 /* TwitterConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +505,7 @@
 				07EAA408103D6A65009D5CE4 /* NSData+Base64.m in Sources */,
 				07EAA409103D6A65009D5CE4 /* NSString+UUID.m in Sources */,
 				07B794B9103E2AFB00B5CA5A /* ConcreteTwitterEngineFactory.m in Sources */,
+				07C19CE41042B19D00FE5731 /* TwitterConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
