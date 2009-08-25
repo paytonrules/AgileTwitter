@@ -1,7 +1,7 @@
 #import "TwitterDataSource.h"
 #import "TwitterDataSourceTest.h"
 #import "TwitterEngineFactory.h"
-#import "MGTwitterEngine.h"
+#import "TwitterConnection.h"
 #import "TwitterStatusCell.h"
 #import <OCMock/OCMock.h>
 
@@ -22,13 +22,10 @@
 	return (UITableView *)[OCMockObject niceMockForClass:[UITableView class]];
 }
 
--(void) setupMockTwitterEngine
+-(void) setupMockTwitterConnection
 {
-	twitterEngine = [OCMockObject mockForClass:[MGTwitterEngine class]];
-	[[[twitterEngine stub] andReturn:@"Username"] username];
-	twitterEngineFactory = [OCMockObject mockForProtocol:@protocol(TwitterEngineFactory)];
-	twitterDataSource.twitterEngineFactory = (NSObject *)twitterEngineFactory;
-	[[[twitterEngineFactory stub] andReturn: twitterEngine] createWithDelegate: OCMOCK_ANY];
+	twitterConnection = [OCMockObject mockForClass:[TwitterConnection class]];
+	twitterDataSource.twitterConnection  = (TwitterConnection *)twitterConnection;
 }
 
 -(void) testCellTriesForReusableCellsFirst
@@ -51,36 +48,15 @@
 	STAssertEqualStrings(@"TwitterCellIdentifier", cell.reuseIdentifier, nil);
 }
 
--(void) testCreatesTheTwitterEngineToMakeACall
+-(void) testCallsRefreshOnTwitterConnection
 {
-	twitterEngineFactory = [OCMockObject mockForProtocol:@protocol(TwitterEngineFactory)];
-	twitterDataSource.twitterEngineFactory = (NSObject *)twitterEngineFactory;
+	[self setupMockTwitterConnection];
 
-	[[twitterEngineFactory expect] createWithDelegate: twitterDataSource];
+	[[twitterConnection expect] refresh];
 	
-	[twitterDataSource getFollowedTimelineSince:nil startingAtPage:0];
+	[twitterDataSource refresh];
 	
-	[twitterEngineFactory verify];
-}
-
--(void) testCallsGetFollowedTimeLineOnTwitterEngine
-{
-	[self setupMockTwitterEngine];
-
-	NSDate *date = [NSDate date];
-	[[twitterEngine expect] getFollowedTimelineFor:@"Username" since:date startingAtPage:1];
-	
-	[twitterDataSource getFollowedTimelineSince:date startingAtPage:1];
-	
-	[twitterEngine verify];
-}
-
--(void) testGetFollowedTimeLineReturnsTheConnectionIdFromTheDataSource
-{
-	[self setupMockTwitterEngine];
-	[[[twitterEngine stub] andReturn: @"ConnectionID"] getFollowedTimelineFor:OCMOCK_ANY since:OCMOCK_ANY startingAtPage:0];
-	
-	STAssertEqualStrings(@"ConnectionID", [twitterDataSource getFollowedTimelineSince:nil startingAtPage:0], nil);
+	[twitterConnection verify];
 }
 
 -(void) testWhenStatusesAreReceivedRefreshTheTableView

@@ -12,7 +12,13 @@
 - (void)viewDidLoad 
 {
 	[super viewDidLoad];
-	[twitterDataSource getFollowedTimelineSince:nil startingAtPage:0];
+	[twitterDataSource refresh];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+	[super viewDidAppear:animated];
+	[twitterDataSource refresh];
 }
 
 - (void)didReceiveMemoryWarning 

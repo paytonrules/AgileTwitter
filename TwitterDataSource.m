@@ -1,13 +1,9 @@
 #import "TwitterDataSource.h"
-#import "MGTwitterEngine.h"
 #import "TwitterStatusCell.h"
 
 @implementation TwitterDataSource
 
-@synthesize twitterEngineFactory, tableView;
-
-
-
+@synthesize twitterConnection, tableView;
 
 - (TwitterStatusCell *)loadTweetAt: (NSUInteger) row intoCell: (TwitterStatusCell*) cell
 {
@@ -21,11 +17,6 @@
 	return cell;	
 }
 
-
-
-
-
-// Table View Cell delegate methods
 - (UITableViewCell *)tableView: (UITableView *)theTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	TwitterStatusCell *cell;
@@ -83,41 +74,14 @@
 	[tweets retain];
 }
 
-- (void)requestSucceeded:(NSString *)requestIdentifier
+- (void)refresh
 {
-}
-
-- (void)requestFailed:(NSString *)requestIdentifier withError:(NSError *)error
-{
-}
-
-- (void)directMessagesReceived:(NSArray *)messages forRequest:(NSString *)identifier
-{
-}
-
-- (void)userInfoReceived:(NSArray *)userInfo forRequest:(NSString *)identifier
-{
-}
-
-- (void)miscInfoReceived:(NSArray *)miscInfo forRequest:(NSString *)identifier
-{
-}
-
-- (void)imageReceived:(UIImage *)image forRequest:(NSString *)identifier
-{
-}
-
-// MGTwitterEngine Call wrappers
-- (NSString *)getFollowedTimelineSince: (NSDate *) date startingAtPage:(int) pageNum
-{
-	MGTwitterEngine *engine = [twitterEngineFactory createWithDelegate:self];
-	
-	return [engine getFollowedTimelineFor:[engine username] since:date startingAtPage:pageNum];	
+	[twitterConnection refresh];
 }
 
 - (void)dealloc
 {
-	[twitterEngineFactory release];
+	[twitterConnection release];
 	[tableView release];
 	[tweets release];
 	[super dealloc];

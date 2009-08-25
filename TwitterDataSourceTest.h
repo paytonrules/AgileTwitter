@@ -4,8 +4,7 @@
 
 @interface TwitterDataSourceTest : GTMTestCase {
 	TwitterDataSource *twitterDataSource;
-	OCMockObject			*twitterEngine;
-	OCMockObject			*twitterEngineFactory;
+	OCMockObject			*twitterConnection;
 }
 
 @end

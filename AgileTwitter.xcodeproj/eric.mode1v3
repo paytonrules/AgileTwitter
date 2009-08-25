@@ -277,8 +277,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>17</integer>
-									<integer>4</integer>
+									<integer>26</integer>
+									<integer>22</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -320,7 +320,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>AgileTwitterAppDelegate.m</string>
+								<string>ListTweetsViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,11 +328,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>AgileTwitterAppDelegate.m</string>
+										<string>ListTweetsViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>07FAA1F51043ACC800BA4D9F</string>
+										<string>07FAA28E10440A7C00BA4D9F</string>
 										<key>history</key>
 										<array>
 											<string>07C19D2A1042BC0400FE5731</string>
@@ -342,9 +342,7 @@
 											<string>07C19D5C1042C3BE00FE5731</string>
 											<string>07C19D5E1042C3BE00FE5731</string>
 											<string>07C19D621042C3BE00FE5731</string>
-											<string>07C19E1E1042CBD700FE5731</string>
 											<string>07FAA04E10437C7500BA4D9F</string>
-											<string>07FAA0971043883400BA4D9F</string>
 											<string>07FAA0D81043980A00BA4D9F</string>
 											<string>07FAA0D91043980A00BA4D9F</string>
 											<string>07FAA0DA1043980A00BA4D9F</string>
@@ -357,13 +355,18 @@
 											<string>07FAA1801043A09E00BA4D9F</string>
 											<string>07FAA1A01043A40D00BA4D9F</string>
 											<string>07FAA1A21043A40D00BA4D9F</string>
-											<string>07FAA1A31043A40D00BA4D9F</string>
-											<string>07FAA1B01043A61000BA4D9F</string>
-											<string>07FAA1B61043A67200BA4D9F</string>
 											<string>07FAA1D21043AB3100BA4D9F</string>
 											<string>07FAA1DF1043AB5800BA4D9F</string>
 											<string>07FAA1E81043AC2E00BA4D9F</string>
-											<string>07FAA1BF1043A73300BA4D9F</string>
+											<string>07FAA27410440A7C00BA4D9F</string>
+											<string>07FAA27510440A7C00BA4D9F</string>
+											<string>07FAA27610440A7C00BA4D9F</string>
+											<string>07FAA27710440A7C00BA4D9F</string>
+											<string>07FAA27810440A7C00BA4D9F</string>
+											<string>07FAA27910440A7C00BA4D9F</string>
+											<string>07FAA27A10440A7C00BA4D9F</string>
+											<string>07FAA27B10440A7C00BA4D9F</string>
+											<string>07FAA24D1044096D00BA4D9F</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -595,6 +598,63 @@
 											<string>07FAA1D91043AB3100BA4D9F</string>
 											<string>07FAA1E01043AB5800BA4D9F</string>
 											<string>07FAA1E91043AC2E00BA4D9F</string>
+											<string>07FAA2021043AD4300BA4D9F</string>
+											<string>07FAA2031043AD4300BA4D9F</string>
+											<string>07FAA20F1043AE0F00BA4D9F</string>
+											<string>07FAA2101043AE0F00BA4D9F</string>
+											<string>07FAA2111043AE0F00BA4D9F</string>
+											<string>07FAA21B1043AE2500BA4D9F</string>
+											<string>07FAA21F1043AE3A00BA4D9F</string>
+											<string>07FAA2271043AF2300BA4D9F</string>
+											<string>07FAA2281043AF2300BA4D9F</string>
+											<string>07FAA2291043AF2300BA4D9F</string>
+											<string>07FAA22A1043AF2300BA4D9F</string>
+											<string>07FAA23A1044077C00BA4D9F</string>
+											<string>07FAA23B1044077C00BA4D9F</string>
+											<string>07FAA23C1044077C00BA4D9F</string>
+											<string>07FAA23D1044077C00BA4D9F</string>
+											<string>07FAA23E1044077C00BA4D9F</string>
+											<string>07FAA2541044096D00BA4D9F</string>
+											<string>07FAA2551044096D00BA4D9F</string>
+											<string>07FAA2561044096D00BA4D9F</string>
+											<string>07FAA2571044096D00BA4D9F</string>
+											<string>07FAA2581044096D00BA4D9F</string>
+											<string>07FAA2591044096D00BA4D9F</string>
+											<string>07FAA25A1044096D00BA4D9F</string>
+											<string>07FAA25B1044096D00BA4D9F</string>
+											<string>07FAA25C1044096D00BA4D9F</string>
+											<string>07FAA25D1044096D00BA4D9F</string>
+											<string>07FAA25E1044096D00BA4D9F</string>
+											<string>07FAA25F1044096D00BA4D9F</string>
+											<string>07FAA2601044096D00BA4D9F</string>
+											<string>07FAA2611044096D00BA4D9F</string>
+											<string>07FAA2621044096D00BA4D9F</string>
+											<string>07FAA2631044096D00BA4D9F</string>
+											<string>07FAA2641044096D00BA4D9F</string>
+											<string>07FAA2651044096D00BA4D9F</string>
+											<string>07FAA2661044096D00BA4D9F</string>
+											<string>07FAA2671044096D00BA4D9F</string>
+											<string>07FAA2681044096D00BA4D9F</string>
+											<string>07FAA2691044096D00BA4D9F</string>
+											<string>07FAA26A1044096D00BA4D9F</string>
+											<string>07FAA27C10440A7C00BA4D9F</string>
+											<string>07FAA27D10440A7C00BA4D9F</string>
+											<string>07FAA27E10440A7C00BA4D9F</string>
+											<string>07FAA27F10440A7C00BA4D9F</string>
+											<string>07FAA28010440A7C00BA4D9F</string>
+											<string>07FAA28110440A7C00BA4D9F</string>
+											<string>07FAA28210440A7C00BA4D9F</string>
+											<string>07FAA28310440A7C00BA4D9F</string>
+											<string>07FAA28410440A7C00BA4D9F</string>
+											<string>07FAA28510440A7C00BA4D9F</string>
+											<string>07FAA28610440A7C00BA4D9F</string>
+											<string>07FAA28710440A7C00BA4D9F</string>
+											<string>07FAA28810440A7C00BA4D9F</string>
+											<string>07FAA28910440A7C00BA4D9F</string>
+											<string>07FAA28A10440A7C00BA4D9F</string>
+											<string>07FAA28B10440A7C00BA4D9F</string>
+											<string>07FAA28C10440A7C00BA4D9F</string>
+											<string>07FAA28D10440A7C00BA4D9F</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -788,12 +848,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>07FAA2181043AE1900BA4D9F</string>
 		<string>07FAA1F01043AC3E00BA4D9F</string>
 		<string>07FAA1F11043AC3E00BA4D9F</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>075AB73F103AC9DD007F6780</string>
-		<string>07A4CCDB1039A0A900735496</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>07A4CCDB1039A0A900735496</string>
 		<string>/Users/eric/Projects-not-8thlight/Cocoa/iPhone/AgileTwitter/AgileTwitter.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -818,7 +879,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ComposeTweetViewControllerTest.m</string>
+								<string>ListTweetsViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -1319,8 +1380,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXBottomSmartGroupGIDs</key>
@@ -1382,6 +1441,8 @@
 							<string>185pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -1421,8 +1482,8 @@
 			<true/>
 			<key>TableOfContents</key>
 			<array>
-				<string>07019B54103AD2E8004D8367</string>
-				<string>07019B55103AD2E8004D8367</string>
+				<string>07FAA2181043AE1900BA4D9F</string>
+				<string>07FAA2191043AE1900BA4D9F</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
 				<string>1CA1AED706398EBD00589147</string>
 			</array>
@@ -1431,7 +1492,7 @@
 			<key>WindowString</key>
 			<string>42 723 744 409 0 0 1920 1178 </string>
 			<key>WindowToolGUID</key>
-			<string>07019B54103AD2E8004D8367</string>
+			<string>07FAA2181043AE1900BA4D9F</string>
 			<key>WindowToolIsVisible</key>
 			<false/>
 		</dict>
