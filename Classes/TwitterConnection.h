@@ -4,7 +4,7 @@
 
 @interface TwitterConnection : NSObject<MGTwitterEngineDelegate>
 {
-	id															delegate;
+	IBOutlet id											delegate;
 	MGTwitterEngine									*twitterEngine;
 }
 

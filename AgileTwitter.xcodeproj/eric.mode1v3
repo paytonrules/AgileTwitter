@@ -232,6 +232,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -269,11 +271,9 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>07EAA4AF103D7C38009D5CE4</string>
-								<string>07EAA2C2103D68CA009D5CE4</string>
 								<string>075AB703103AC6FF007F6780</string>
 								<string>080E96DDFE201D6D7F000001</string>
-								<string>29B97323FDCFA39411CA2CEA</string>
-								<string>078A063A103CAC450052BF91</string>
+								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FAAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
@@ -281,8 +281,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>55</integer>
-									<integer>38</integer>
+									<integer>44</integer>
+									<integer>39</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -317,8 +317,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -336,7 +334,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>07FAA17D1043A04E00BA4D9F</string>
+										<string>07FAA18B1043A0F200BA4D9F</string>
 										<key>history</key>
 										<array>
 											<string>07C19D121042BAA800FE5731</string>
@@ -359,10 +357,11 @@
 											<string>07FAA0DC1043980A00BA4D9F</string>
 											<string>07FAA0DE1043980A00BA4D9F</string>
 											<string>07FAA11C1043993400BA4D9F</string>
-											<string>07FAA15410439F5500BA4D9F</string>
 											<string>07FAA1721043A04E00BA4D9F</string>
 											<string>07FAA1731043A04E00BA4D9F</string>
-											<string>07FAA1741043A04E00BA4D9F</string>
+											<string>07FAA17F1043A09E00BA4D9F</string>
+											<string>07FAA1801043A09E00BA4D9F</string>
+											<string>07FAA1811043A09E00BA4D9F</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -567,6 +566,9 @@
 											<string>07FAA17A1043A04E00BA4D9F</string>
 											<string>07FAA17B1043A04E00BA4D9F</string>
 											<string>07FAA17C1043A04E00BA4D9F</string>
+											<string>07FAA1821043A09E00BA4D9F</string>
+											<string>07FAA1831043A09E00BA4D9F</string>
+											<string>07FAA1841043A09E00BA4D9F</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -760,6 +762,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1C78EAAD065D492600B07095</string>
+		<string>1CD10A99069EF8BA00B06720</string>
 		<string>075AB73F103AC9DD007F6780</string>
 		<string>07A4CCDB1039A0A900735496</string>
 		<string>/Users/eric/Projects-not-8thlight/Cocoa/iPhone/AgileTwitter/AgileTwitter.xcodeproj</string>
@@ -966,13 +970,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>07C19CF61042B35900FE5731</string>
+				<string>07FAA18C1043A0F200BA4D9F</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>07C19CF71042B35900FE5731</string>
-				<string>07C19CF81042B35900FE5731</string>
-				<string>07C19CF91042B35900FE5731</string>
-				<string>07C19CFA1042B35900FE5731</string>
-				<string>07C19CFB1042B35900FE5731</string>
+				<string>07FAA18D1043A0F200BA4D9F</string>
+				<string>07FAA18E1043A0F200BA4D9F</string>
+				<string>07FAA18F1043A0F200BA4D9F</string>
+				<string>07FAA1901043A0F200BA4D9F</string>
+				<string>07FAA1911043A0F200BA4D9F</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -1091,8 +1095,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -1128,7 +1130,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>07278FD31040496800B63551</string>
+				<string>07FAA1921043A0F200BA4D9F</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
@@ -1138,7 +1140,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
