@@ -1,16 +1,18 @@
 #import "ComposeTweetViewController.h"
 
-
 @implementation ComposeTweetViewController
 
-@synthesize textView, twitterConnection;
+@synthesize textView, twitterConnection, appDelegate;
 
 -(IBAction) tweet
 {
 	[twitterConnection tweet:textView.text];
+	textView.text = @"";
+	[appDelegate doneComposing];
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning 
+{
 	// Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
 	
@@ -31,6 +33,7 @@
 {
 	[twitterConnection release];
 	[textView release];
+	[appDelegate release];
 	[super dealloc];
 }	
 @end

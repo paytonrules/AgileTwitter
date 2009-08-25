@@ -41,4 +41,13 @@
 	STAssertEqualObjects(delegate.navigationController.visibleViewController, composeTweetController, nil);
 }
 
+- (void)testDoneComposingPopsTheComposeTweetViewOffTheStack
+{
+	[delegate compose];
+	
+	[delegate doneComposing];
+	
+	STAssertNil(delegate.navigationController.visibleViewController, nil);
+}
+
 @end

@@ -16,6 +16,11 @@
 	[navigationController pushViewController:composeTweetController animated: YES];
 }
 
+- (IBAction)doneComposing
+{
+	[navigationController popViewControllerAnimated:YES];
+}
+
 - (void)dealloc
 {
 	[navigationController release];

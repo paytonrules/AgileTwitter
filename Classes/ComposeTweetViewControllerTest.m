@@ -1,6 +1,7 @@
 #import "ComposeTweetViewControllerTest.h"
 #import "ComposeTweetViewController.h"
 #import "TwitterConnection.h"
+#import "AgileTwitterAppDelegate.h"
 #import <OCMock/OCMock.h>
 
 @implementation ComposeTweetViewControllerTest
@@ -41,5 +42,31 @@
 	
 	[twitterConnection verify];
 }
+
+- (void)testSendButtonClearsText
+{
+	viewController.textView = [[[UITextView alloc] init] autorelease];
+	viewController.textView.text = @"This is my tweet";
+	
+	OCMockObject *twitterConnection = [OCMockObject niceMockForClass:[TwitterConnection class]];
+	viewController.twitterConnection = (TwitterConnection *)twitterConnection;
+	
+	[viewController tweet];
+	
+	STAssertEqualStrings(@"", viewController.textView.text, nil);
+}
+
+- (void)testSendButtonTellsDelegateDoneComposing
+{
+	OCMockObject *appDelegate = [OCMockObject niceMockForClass:[AgileTwitterAppDelegate class]];
+	viewController.appDelegate = (AgileTwitterAppDelegate *)appDelegate;
+	
+	[[appDelegate expect] doneComposing];
+	
+	[viewController tweet];
+	
+	[appDelegate verify];
+}
+	
 
 @end
