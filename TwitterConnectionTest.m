@@ -1,15 +1,24 @@
 #import "TwitterConnectionTest.h"
+#import "ConcreteTwitterEngineFactory.h"
 
 @implementation TwitterConnectionTest
+
+- (void)statusesReceived:(NSArray *)newStatuses forRequest:(NSString *)identifier
+{
+	statusesReceived = true;
+}
+
+- (void)requestFailed:(NSString *)requestIdentifier withError:(NSError *)error
+{
+	requestFailedReceived = true;
+}
 
 - (void)setUp
 {
 	twitterConnection = [[TwitterConnection alloc] init];
 	
-	twitterEngine = [OCMockObject mockForClass:[MGTwitterEngine class]];
-	[[[twitterEngine stub] andReturn:@"username"] username];
-	twitterEngineFactory = [OCMockObject mockForProtocol:@protocol(TwitterEngineFactory)];
-	[[[twitterEngineFactory stub] andReturn: twitterEngine] createWithDelegate: OCMOCK_ANY];
+	twitterEngine = [OCMockObject niceMockForClass:[MGTwitterEngine class]];
+	twitterConnection.twitterEngine = (MGTwitterEngine *)twitterEngine;
 	twitterConnection.twitterEngineFactory = (NSObject *)twitterEngineFactory;
 }
 
@@ -35,6 +44,40 @@
 	[twitterConnection refresh];
 	
 	[twitterEngine verify];
+}
+
+- (void)testStartsWithAConcreteTwitterFactory
+{
+	TwitterConnection *myTwitterConnection = [[[TwitterConnection alloc] init] autorelease];
+	
+	STAssertTrue([myTwitterConnection.twitterEngineFactory isKindOfClass:[ConcreteTwitterEngineFactory class]], nil);
+}
+
+- (void)testForwardsOnStatusesReceivedIfItsDelegateResponds
+{
+	statusesReceived = false;
+	twitterConnection.delegate = self;
+	
+	[twitterConnection statusesReceived:nil forRequest:nil];
+	
+	STAssertTrue(statusesReceived, nil);
+}
+
+- (void)testDoesNotCrashWhenThereIsNotADelegate
+{
+	statusesReceived = false;
+	
+	STAssertNoThrow([twitterConnection statusesReceived:nil forRequest:nil], nil);
+	STAssertFalse(statusesReceived, nil);
+}
+
+- (void)testDoesNotCrashWhenTheDelegateDoesNotHaveTheMethod
+{
+	NSObject *object = [[NSObject alloc] init];
+	twitterConnection.delegate = object;
+	[object release];
+	
+	STAssertNoThrow([twitterConnection statusesReceived:nil forRequest:nil], nil);
 }
 
 @end

@@ -6,7 +6,9 @@
 @interface TwitterConnectionTest : GTMTestCase 
 {
 	TwitterConnection *twitterConnection;
-	OCMockObject *twitterEngineFactory;
-	OCMockObject *twitterEngine;
+	OCMockObject			*twitterEngineFactory;
+	OCMockObject			*twitterEngine;
+	bool							statusesReceived;
+	bool							requestFailedReceived;
 }
 @end

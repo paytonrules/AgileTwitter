@@ -63,6 +63,7 @@
 		07EAA40C103D6AEC009D5CE4 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EAA40B103D6AEC009D5CE4 /* libxml2.2.dylib */; };
 		07EAA40D103D6AEC009D5CE4 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EAA40B103D6AEC009D5CE4 /* libxml2.2.dylib */; };
 		07EAA4AB103D7BA5009D5CE4 /* ListTweetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* ListTweetsViewController.m */; };
+		07FAA0BC104390B700BA4D9F /* TwitterConnectionWithRealEngineTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FAA0BB104390B700BA4D9F /* TwitterConnectionWithRealEngineTest.m */; };
 		1D3623260D0F684500981E51 /* AgileTwitterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AgileTwitterAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -145,6 +146,8 @@
 		07EAA3ED103D6A65009D5CE4 /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+UUID.m"; path = "MGTwitterEngine-1.0.8/NSString+UUID.m"; sourceTree = "<group>"; };
 		07EAA40B103D6AEC009D5CE4 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		07EAA4B0103D7C55009D5CE4 /* TwitterEngineFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterEngineFactory.h; sourceTree = "<group>"; };
+		07FAA0BA104390B700BA4D9F /* TwitterConnectionWithRealEngineTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterConnectionWithRealEngineTest.h; sourceTree = "<group>"; };
+		07FAA0BB104390B700BA4D9F /* TwitterConnectionWithRealEngineTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterConnectionWithRealEngineTest.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* AgileTwitterAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgileTwitterAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AgileTwitterAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgileTwitterAppDelegate.m; sourceTree = "<group>"; };
@@ -202,6 +205,8 @@
 				072791181040950600B63551 /* AgileTwitterAppDelegateTest.m */,
 				072792DC1040E64A00B63551 /* TwitterConnectionTest.h */,
 				072792DD1040E64A00B63551 /* TwitterConnectionTest.m */,
+				07FAA0BA104390B700BA4D9F /* TwitterConnectionWithRealEngineTest.h */,
+				07FAA0BB104390B700BA4D9F /* TwitterConnectionWithRealEngineTest.m */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -477,6 +482,7 @@
 				072792181040B89700B63551 /* ComposeTweetViewController.m in Sources */,
 				072792DE1040E64A00B63551 /* TwitterConnectionTest.m in Sources */,
 				07C19CE31042B19D00FE5731 /* TwitterConnection.m in Sources */,
+				07FAA0BC104390B700BA4D9F /* TwitterConnectionWithRealEngineTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

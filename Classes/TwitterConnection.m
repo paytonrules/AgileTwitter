@@ -1,26 +1,36 @@
 #import "TwitterConnection.h"
+#import "ConcreteTwitterEngineFactory.h"
 
 @implementation TwitterConnection
 
-@synthesize twitterEngineFactory;
+@synthesize twitterEngineFactory, delegate, twitterEngine;
+
+- (id)init
+{
+	if (self = [super init] )
+	{
+		twitterEngineFactory = [[ConcreteTwitterEngineFactory alloc] init];
+		twitterEngine = [[MGTwitterEngine alloc] initWithDelegate:self];
+	}
+	return self;
+}
 
 - (void)tweet:(NSString *)message
 {
-	MGTwitterEngine *engine = [twitterEngineFactory createWithDelegate:self];
-	
-	[engine sendUpdate:message];
+	[twitterEngine sendUpdate:message];
 }
 
 - (void)refresh
 {	
-	MGTwitterEngine *engine = [twitterEngineFactory createWithDelegate:self];
-	
-	[engine getFollowedTimelineFor:[engine username] since:nil startingAtPage:0];
+	[twitterEngine getFollowedTimelineFor:[twitterEngine username] since:nil startingAtPage:0];
 }
 
-// Delegate Methods (callbacks) from MGTwitterEngines
 - (void)statusesReceived:(NSArray *)statuses forRequest:(NSString *)identifier
 {
+	if ([delegate respondsToSelector:@selector(statusesReceived:forRequest:)])
+	{
+		[delegate statusesReceived:statuses forRequest:identifier];
+	}
 }
 
 - (void)requestSucceeded:(NSString *)requestIdentifier
@@ -29,6 +39,7 @@
 
 - (void)requestFailed:(NSString *)requestIdentifier withError:(NSError *)error
 {
+	[delegate requestFailed:nil withError:nil];
 }
 
 - (void)directMessagesReceived:(NSArray *)messages forRequest:(NSString *)identifier
@@ -50,6 +61,8 @@
 - (void)dealloc
 {
 	[twitterEngineFactory release];
+	[twitterEngine release];
+	[delegate release];
 	[super dealloc];
 }
 
