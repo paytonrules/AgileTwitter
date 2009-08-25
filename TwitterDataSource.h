@@ -1,6 +1,5 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "TwitterEngineFactory.h"
 #import "TwitterConnection.h"
 #import "TwitterStatusCell.h"
 

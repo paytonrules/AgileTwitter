@@ -268,8 +268,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
-								<string>075AB703103AC6FF007F6780</string>
-								<string>080E96DDFE201D6D7F000001</string>
+								<string>07EAA4AF103D7C38009D5CE4</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FAAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
@@ -277,9 +276,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>26</integer>
-									<integer>22</integer>
-									<integer>0</integer>
+									<integer>11</integer>
+									<integer>10</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -332,17 +330,15 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>07FAA28E10440A7C00BA4D9F</string>
+										<string>07FAA2D310440E4E00BA4D9F</string>
 										<key>history</key>
 										<array>
-											<string>07C19D2A1042BC0400FE5731</string>
 											<string>07C19D561042C3BE00FE5731</string>
 											<string>07C19D581042C3BE00FE5731</string>
 											<string>07C19D5A1042C3BE00FE5731</string>
 											<string>07C19D5C1042C3BE00FE5731</string>
 											<string>07C19D5E1042C3BE00FE5731</string>
 											<string>07C19D621042C3BE00FE5731</string>
-											<string>07FAA04E10437C7500BA4D9F</string>
 											<string>07FAA0D81043980A00BA4D9F</string>
 											<string>07FAA0D91043980A00BA4D9F</string>
 											<string>07FAA0DA1043980A00BA4D9F</string>
@@ -354,19 +350,20 @@
 											<string>07FAA1731043A04E00BA4D9F</string>
 											<string>07FAA1801043A09E00BA4D9F</string>
 											<string>07FAA1A01043A40D00BA4D9F</string>
-											<string>07FAA1A21043A40D00BA4D9F</string>
 											<string>07FAA1D21043AB3100BA4D9F</string>
 											<string>07FAA1DF1043AB5800BA4D9F</string>
 											<string>07FAA1E81043AC2E00BA4D9F</string>
 											<string>07FAA27410440A7C00BA4D9F</string>
 											<string>07FAA27510440A7C00BA4D9F</string>
-											<string>07FAA27610440A7C00BA4D9F</string>
 											<string>07FAA27710440A7C00BA4D9F</string>
 											<string>07FAA27810440A7C00BA4D9F</string>
 											<string>07FAA27910440A7C00BA4D9F</string>
 											<string>07FAA27A10440A7C00BA4D9F</string>
-											<string>07FAA27B10440A7C00BA4D9F</string>
-											<string>07FAA24D1044096D00BA4D9F</string>
+											<string>07FAA29810440BB700BA4D9F</string>
+											<string>07FAA29910440BB700BA4D9F</string>
+											<string>07FAA2CF10440E4E00BA4D9F</string>
+											<string>07FAA2D010440E4E00BA4D9F</string>
+											<string>07FAA2A610440CAF00BA4D9F</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -407,7 +404,6 @@
 											<string>07C19D201042BAA800FE5731</string>
 											<string>07C19D2D1042BC0400FE5731</string>
 											<string>07C19D2E1042BC0400FE5731</string>
-											<string>07C19D301042BC0400FE5731</string>
 											<string>07C19D3A1042BCA400FE5731</string>
 											<string>07C19D681042C3BE00FE5731</string>
 											<string>07C19D6B1042C3BE00FE5731</string>
@@ -443,7 +439,6 @@
 											<string>07FAA0431043790100BA4D9F</string>
 											<string>07FAA0471043799800BA4D9F</string>
 											<string>07FAA05510437C7500BA4D9F</string>
-											<string>07FAA05610437C7500BA4D9F</string>
 											<string>07FAA05710437C7500BA4D9F</string>
 											<string>07FAA05810437C7500BA4D9F</string>
 											<string>07FAA05910437C7500BA4D9F</string>
@@ -655,6 +650,14 @@
 											<string>07FAA28B10440A7C00BA4D9F</string>
 											<string>07FAA28C10440A7C00BA4D9F</string>
 											<string>07FAA28D10440A7C00BA4D9F</string>
+											<string>07FAA29A10440BB700BA4D9F</string>
+											<string>07FAA29B10440BB700BA4D9F</string>
+											<string>07FAA29C10440BB700BA4D9F</string>
+											<string>07FAA29D10440BB700BA4D9F</string>
+											<string>07FAA2A710440CAF00BA4D9F</string>
+											<string>07FAA2A810440CAF00BA4D9F</string>
+											<string>07FAA2D110440E4E00BA4D9F</string>
+											<string>07FAA2D210440E4E00BA4D9F</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -848,13 +851,14 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>07FAA2CD10440DFA00BA4D9F</string>
 		<string>07FAA2181043AE1900BA4D9F</string>
 		<string>07FAA1F01043AC3E00BA4D9F</string>
 		<string>07FAA1F11043AC3E00BA4D9F</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>075AB73F103AC9DD007F6780</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>07A4CCDB1039A0A900735496</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/eric/Projects-not-8thlight/Cocoa/iPhone/AgileTwitter/AgileTwitter.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -879,7 +883,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ListTweetsViewController.m</string>
+								<string>TwitterConnectionTest.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -950,7 +954,7 @@
 			<key>WindowToolGUID</key>
 			<string>07A4CCDB1039A0A900735496</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>

@@ -15,12 +15,6 @@
 	[twitterDataSource refresh];
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
-	[super viewDidAppear:animated];
-	[twitterDataSource refresh];
-}
-
 - (void)didReceiveMemoryWarning 
 {
 	// Releases the view if it doesn't have a superview.
@@ -34,6 +28,11 @@
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
 	self.twitterDataSource = nil;
+}
+
+- (IBAction) refresh
+{
+	[twitterDataSource refresh];
 }
 
 - (void)dealloc 

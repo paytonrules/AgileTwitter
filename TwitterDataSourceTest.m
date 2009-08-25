@@ -1,6 +1,5 @@
 #import "TwitterDataSource.h"
 #import "TwitterDataSourceTest.h"
-#import "TwitterEngineFactory.h"
 #import "TwitterConnection.h"
 #import "TwitterStatusCell.h"
 #import <OCMock/OCMock.h>

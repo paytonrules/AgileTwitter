@@ -6,6 +6,7 @@
 	IBOutlet TwitterDataSource *twitterDataSource;
 }
 
+- (IBAction)refresh;
 @property(nonatomic, retain) TwitterDataSource *twitterDataSource;
 
 @end

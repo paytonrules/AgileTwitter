@@ -32,15 +32,14 @@
 	STAssertEquals((CGFloat)kRowHeight, [viewController tableView:nil heightForRowAtIndexPath:nil], nil);
 }
 
--(void) testDataSourceIsLoadedOnViewDidAppear
+-(void) testRefreshRefreshesTheDataSource
 {
 	OCMockObject *mockDataSource = [OCMockObject niceMockForClass:[TwitterDataSource class]];
 	viewController.twitterDataSource = (TwitterDataSource *)mockDataSource;
-	[viewController viewDidLoad];
 	
 	[[mockDataSource expect] refresh];
-
-	[viewController viewDidAppear:YES];
+	
+	[viewController refresh];
 	
 	[mockDataSource verify];
 }

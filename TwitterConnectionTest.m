@@ -1,5 +1,4 @@
 #import "TwitterConnectionTest.h"
-#import "ConcreteTwitterEngineFactory.h"
 
 @implementation TwitterConnectionTest
 
