@@ -1,12 +1,15 @@
 #import <Foundation/Foundation.h>
 #import "MGTwitterEngine.h"
+#import "MGTwitterEngineDelegate.h"
+#import "TwitterEngineFactory.h"
 
-@interface TwitterConnection : NSObject
+@interface TwitterConnection : NSObject<MGTwitterEngineDelegate>
 {
-	MGTwitterEngine* twitterEngine;
+	NSObject<TwitterEngineFactory>	*twitterEngineFactory;
 }
 
-@property(nonatomic, retain) MGTwitterEngine *twitterEngine;
+@property(nonatomic, retain) NSObject<TwitterEngineFactory> *twitterEngineFactory;
 -(void) tweet:(NSString*) message;
+-(void) refresh;
 
 @end

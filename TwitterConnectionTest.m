@@ -1,19 +1,40 @@
 #import "TwitterConnectionTest.h"
-#import "TwitterConnection.h"
-#import "MGTwitterEngine.h"
-#import <OCMock/OCMock.h>
 
 @implementation TwitterConnectionTest
 
-- (void) testSendsTweetThroughTwitterEngine
+- (void)setUp
 {
-	OCMockObject *twitterEngine = [OCMockObject mockForClass:[MGTwitterEngine class]];
-	TwitterConnection *twitterConnection = [[[TwitterConnection alloc] init] autorelease];
-	twitterConnection.twitterEngine = (MGTwitterEngine *)twitterEngine;
-//	twitterConnection
+	twitterConnection = [[TwitterConnection alloc] init];
 	
-	//STAssertTrue((1+1)==3, @"Compiler isn't feeling well today :-(" );  
+	twitterEngine = [OCMockObject mockForClass:[MGTwitterEngine class]];
+	[[[twitterEngine stub] andReturn:@"username"] username];
+	twitterEngineFactory = [OCMockObject mockForProtocol:@protocol(TwitterEngineFactory)];
+	[[[twitterEngineFactory stub] andReturn: twitterEngine] createWithDelegate: OCMOCK_ANY];
+	twitterConnection.twitterEngineFactory = (NSObject *)twitterEngineFactory;
 }
 
+- (void)tearDown
+{
+	[twitterConnection release];
+}
+
+- (void)testSendsTweetThroughTwitterEngine
+{
+	[[twitterEngine expect] sendUpdate:@"Tweet"];
+	
+	[twitterConnection tweet:@"Tweet"];
+	
+	[twitterEngine verify];
+}
+
+- (void)testRefreshRetrievesAllTweets
+{
+	[[[twitterEngine stub] andReturn:@"username"] username];
+	[[twitterEngine expect] getFollowedTimelineFor:@"username" since:nil startingAtPage:0];
+	
+	[twitterConnection refresh];
+	
+	[twitterEngine verify];
+}
 
 @end
