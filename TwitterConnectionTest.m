@@ -13,6 +13,8 @@
 - (void)requestFailed:(NSString *)requestIdentifier withError:(NSError *)error
 {
 	requestFailedReceived = true;
+	requestFailedId = requestIdentifier;
+	requestFailedError = error;
 }
 
 - (void)setUp
@@ -76,5 +78,28 @@
 	
 	STAssertNoThrow([twitterConnection statusesReceived:nil forRequest:nil], nil);
 }
+
+- (void)testRequestFailedForwardsOnCall
+{
+	requestFailedReceived = false;
+	twitterConnection.delegate = self;
+	
+	NSError *error = [[[NSError alloc] init] autorelease];
+	[twitterConnection requestFailed:@"ID" withError:error];
+	
+	STAssertTrue(requestFailedReceived, nil);
+	STAssertEqualStrings(@"ID", requestFailedId, nil);
+	STAssertEqualObjects(error, requestFailedError, nil);
+}
+
+- (void)testRequestDoesNotCrashWhenTheDelegateDoesNotHaveRequestFailed
+{
+	NSObject *object = [[NSObject alloc] init];
+	twitterConnection.delegate = object;
+	[object release];
+	
+	STAssertNoThrow([twitterConnection requestFailed:nil withError:nil], nil);
+} 
+
 
 @end

@@ -11,5 +11,7 @@
 	bool							requestFailedReceived;
 	NSArray						*statuses;
 	NSString					*requestId;
+	NSString					*requestFailedId;
+	NSError						*requestFailedError;
 }
 @end

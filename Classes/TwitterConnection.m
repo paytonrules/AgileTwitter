@@ -38,7 +38,10 @@
 
 - (void)requestFailed:(NSString *)requestIdentifier withError:(NSError *)error
 {
-	[delegate requestFailed:nil withError:nil];
+	if ([delegate respondsToSelector:@selector(requestFailed:withError:)])
+	{
+		[delegate requestFailed:requestIdentifier withError:error];
+	}
 }
 
 - (void)directMessagesReceived:(NSArray *)messages forRequest:(NSString *)identifier

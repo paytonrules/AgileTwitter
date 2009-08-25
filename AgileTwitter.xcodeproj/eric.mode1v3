@@ -306,7 +306,7 @@
 							<real>270</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>0 59 1920 1119 0 0 1920 1178 </string>
+						<string>0 58 1920 1119 0 0 1920 1178 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -324,7 +324,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TwitterConnectionTest.m</string>
+								<string>TwitterConnection.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -332,11 +332,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TwitterConnectionTest.m</string>
+										<string>TwitterConnection.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>07FAA13810439B5E00BA4D9F</string>
+										<string>07FAA17D1043A04E00BA4D9F</string>
 										<key>history</key>
 										<array>
 											<string>07C19D121042BAA800FE5731</string>
@@ -359,10 +359,10 @@
 											<string>07FAA0DC1043980A00BA4D9F</string>
 											<string>07FAA0DE1043980A00BA4D9F</string>
 											<string>07FAA11C1043993400BA4D9F</string>
-											<string>07FAA12910439B2200BA4D9F</string>
-											<string>07FAA13210439B5E00BA4D9F</string>
-											<string>07FAA13310439B5E00BA4D9F</string>
-											<string>07FAA13410439B5E00BA4D9F</string>
+											<string>07FAA15410439F5500BA4D9F</string>
+											<string>07FAA1721043A04E00BA4D9F</string>
+											<string>07FAA1731043A04E00BA4D9F</string>
+											<string>07FAA1741043A04E00BA4D9F</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -537,6 +537,36 @@
 											<string>07FAA13510439B5E00BA4D9F</string>
 											<string>07FAA13610439B5E00BA4D9F</string>
 											<string>07FAA13710439B5E00BA4D9F</string>
+											<string>07FAA14310439DF900BA4D9F</string>
+											<string>07FAA14410439DF900BA4D9F</string>
+											<string>07FAA14510439DF900BA4D9F</string>
+											<string>07FAA14610439DF900BA4D9F</string>
+											<string>07FAA14710439DF900BA4D9F</string>
+											<string>07FAA14810439DF900BA4D9F</string>
+											<string>07FAA14910439DF900BA4D9F</string>
+											<string>07FAA14A10439DF900BA4D9F</string>
+											<string>07FAA14B10439DF900BA4D9F</string>
+											<string>07FAA14C10439DF900BA4D9F</string>
+											<string>07FAA14D10439DF900BA4D9F</string>
+											<string>07FAA15810439F5500BA4D9F</string>
+											<string>07FAA15910439F5500BA4D9F</string>
+											<string>07FAA15A10439F5500BA4D9F</string>
+											<string>07FAA15B10439F5500BA4D9F</string>
+											<string>07FAA15C10439F5500BA4D9F</string>
+											<string>07FAA15D10439F5500BA4D9F</string>
+											<string>07FAA15E10439F5500BA4D9F</string>
+											<string>07FAA15F10439F5500BA4D9F</string>
+											<string>07FAA16010439F5500BA4D9F</string>
+											<string>07FAA16110439F5500BA4D9F</string>
+											<string>07FAA16210439F5500BA4D9F</string>
+											<string>07FAA1751043A04E00BA4D9F</string>
+											<string>07FAA1761043A04E00BA4D9F</string>
+											<string>07FAA1771043A04E00BA4D9F</string>
+											<string>07FAA1781043A04E00BA4D9F</string>
+											<string>07FAA1791043A04E00BA4D9F</string>
+											<string>07FAA17A1043A04E00BA4D9F</string>
+											<string>07FAA17B1043A04E00BA4D9F</string>
+											<string>07FAA17C1043A04E00BA4D9F</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -550,7 +580,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1628, 990}}</string>
 								<key>RubberWindowFrame</key>
-								<string>0 59 1920 1119 0 0 1920 1178 </string>
+								<string>0 58 1920 1119 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -570,7 +600,7 @@
 								<key>Frame</key>
 								<string>{{0, 995}, {1628, 83}}</string>
 								<key>RubberWindowFrame</key>
-								<string>0 59 1920 1119 0 0 1920 1178 </string>
+								<string>0 58 1920 1119 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -730,11 +760,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>075AB73F103AC9DD007F6780</string>
 		<string>07A4CCDB1039A0A900735496</string>
 		<string>/Users/eric/Projects-not-8thlight/Cocoa/iPhone/AgileTwitter/AgileTwitter.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>0 59 1920 1119 0 0 1920 1178 </string>
+	<string>0 58 1920 1119 0 0 1920 1178 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -750,8 +781,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -774,6 +803,8 @@
 							<string>165pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXBuildLogShowsTranscriptDefaultKey</key>
@@ -1598,7 +1629,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>075AB73F103AC9DD007F6780</string>
-				<string>07C19CFC1042B35900FE5731</string>
+				<string>07FAA16410439F5500BA4D9F</string>
 				<string>075AB73E103AC9DD007F6780</string>
 			</array>
 			<key>WindowString</key>
