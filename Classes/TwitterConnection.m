@@ -1,16 +1,15 @@
 #import "TwitterConnection.h"
-#import "ConcreteTwitterEngineFactory.h"
 
 @implementation TwitterConnection
 
-@synthesize twitterEngineFactory, delegate, twitterEngine;
+@synthesize delegate, twitterEngine;
 
 - (id)init
 {
 	if (self = [super init] )
 	{
-		twitterEngineFactory = [[ConcreteTwitterEngineFactory alloc] init];
 		twitterEngine = [[MGTwitterEngine alloc] initWithDelegate:self];
+		[twitterEngine setUsername:@"tddoniphone" password:@"daledaledale"];
 	}
 	return self;
 }
@@ -60,7 +59,6 @@
 
 - (void)dealloc
 {
-	[twitterEngineFactory release];
 	[twitterEngine release];
 	[delegate release];
 	[super dealloc];

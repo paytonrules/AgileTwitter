@@ -1,7 +1,15 @@
 #import "TwitterConnectionWithRealEngineTest.h"
-#import "TwitterConnection.h"
-
 @implementation TwitterConnectionWithRealEngineTest
+
+- (void)setUp
+{
+	twitterConnection = [[TwitterConnection alloc] init];
+}
+
+- (void)tearDown
+{
+	[twitterConnection release];
+}
 
 - (void)requestFailed:(NSString *)requestIdentifier withError:(NSError *)error
 {
@@ -10,7 +18,6 @@
 
 - (void)testSetsTheMGEngineDelegateToSelf
 {
-	TwitterConnection *twitterConnection = [[[TwitterConnection alloc] init] autorelease];
 	requestFailedReceived = false;
 	twitterConnection.delegate = self;
 	
@@ -18,5 +25,12 @@
 	
 	STAssertTrue(requestFailedReceived, nil);
 }
+
+- (void)testSetsTheUserNameAndPasswordForTheEngine
+{
+	STAssertEqualStrings(@"tddoniphone", [twitterConnection.twitterEngine username], nil);
+	STAssertEqualStrings(@"daledaledale", [twitterConnection.twitterEngine password], nil);
+}
+	
 
 @end

@@ -6,6 +6,8 @@
 - (void)statusesReceived:(NSArray *)newStatuses forRequest:(NSString *)identifier
 {
 	statusesReceived = true;
+	statuses = [NSArray arrayWithArray:newStatuses];
+	requestId = identifier;
 }
 
 - (void)requestFailed:(NSString *)requestIdentifier withError:(NSError *)error
@@ -19,7 +21,6 @@
 	
 	twitterEngine = [OCMockObject niceMockForClass:[MGTwitterEngine class]];
 	twitterConnection.twitterEngine = (MGTwitterEngine *)twitterEngine;
-	twitterConnection.twitterEngineFactory = (NSObject *)twitterEngineFactory;
 }
 
 - (void)tearDown
@@ -46,21 +47,17 @@
 	[twitterEngine verify];
 }
 
-- (void)testStartsWithAConcreteTwitterFactory
-{
-	TwitterConnection *myTwitterConnection = [[[TwitterConnection alloc] init] autorelease];
-	
-	STAssertTrue([myTwitterConnection.twitterEngineFactory isKindOfClass:[ConcreteTwitterEngineFactory class]], nil);
-}
-
 - (void)testForwardsOnStatusesReceivedIfItsDelegateResponds
 {
 	statusesReceived = false;
 	twitterConnection.delegate = self;
+	NSArray *theStatuses = [NSArray arrayWithObject:@"Object"];
 	
-	[twitterConnection statusesReceived:nil forRequest:nil];
+	[twitterConnection statusesReceived:theStatuses forRequest:@"Request"];
 	
 	STAssertTrue(statusesReceived, nil);
+	STAssertEqualObjects(theStatuses, statuses, nil);
+	STAssertEqualStrings(@"Request", requestId, nil);
 }
 
 - (void)testDoesNotCrashWhenThereIsNotADelegate
