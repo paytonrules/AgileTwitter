@@ -33,4 +33,13 @@
 - (void)imageReceived:(UIImage *)image forRequest:(NSString *)identifier
 {
 }
+
+- (void)dealloc
+{
+	if(delegate != nil)
+	{
+		[delegate release];
+	}
+	[super dealloc];
+}
 @end

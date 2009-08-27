@@ -27,7 +27,6 @@
 - (void)dealloc
 {
 	[twitterEngine release];
-	[delegate release];
 	[super dealloc];
 }
 
