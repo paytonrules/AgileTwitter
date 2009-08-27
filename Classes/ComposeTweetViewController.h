@@ -1,17 +1,17 @@
 #import <UIKit/UIKit.h>
-#import "MGTwitterConnection.h"
+#import "TwitterConnectionProtocol.h"
 #import "AgileTwitterAppDelegate.h"
 
 @interface ComposeTweetViewController : UIViewController
 {
-	IBOutlet UITextView								*textView;
-	IBOutlet MGTwitterConnection				*twitterConnection;
-	IBOutlet AgileTwitterAppDelegate	*appDelegate;
+	IBOutlet UITextView														*textView;
+	IBOutlet NSObject<TwitterConnectionProtocol>	*twitterConnection;
+	IBOutlet AgileTwitterAppDelegate							*appDelegate;
 }
 
 -(IBAction) tweet;
 @property(nonatomic, retain) UITextView *textView;
-@property(nonatomic, retain) MGTwitterConnection *twitterConnection;
+@property(nonatomic, retain) NSObject<TwitterConnectionProtocol> *twitterConnection;
 @property(nonatomic, retain) AgileTwitterAppDelegate *appDelegate;
 
 @end
