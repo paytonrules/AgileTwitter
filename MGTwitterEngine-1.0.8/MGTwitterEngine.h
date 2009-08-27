@@ -7,11 +7,11 @@
 //
 
 #import "MGTwitterEngineGlobalHeader.h"
-
 #import "MGTwitterEngineDelegate.h"
 #import "MGTwitterParserDelegate.h"
+#import "TwitterEngineProtocol.h"
 
-@interface MGTwitterEngine : NSObject <MGTwitterParserDelegate> {
+@interface MGTwitterEngine : NSObject <MGTwitterParserDelegate, TwitterEngineProtocol> {
     __weak NSObject <MGTwitterEngineDelegate> *_delegate;
     NSString *_username;
     NSString *_password;

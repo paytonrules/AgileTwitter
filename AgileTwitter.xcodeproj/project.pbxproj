@@ -86,6 +86,7 @@
 		0727922B1040B92000B63551 /* ComposeTweet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComposeTweet.xib; sourceTree = "<group>"; };
 		072792DC1040E64A00B63551 /* TwitterConnectionTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterConnectionTest.h; sourceTree = "<group>"; };
 		072792DD1040E64A00B63551 /* TwitterConnectionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterConnectionTest.m; sourceTree = "<group>"; };
+		074FFC6E10462B1000B7E5EC /* TwitterEngineProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterEngineProtocol.h; sourceTree = "<group>"; };
 		075AB6F3103A1E3D007F6780 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		078A058C103C98570052BF91 /* UnitTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		078A059E103C98A70052BF91 /* GTMIPhoneUnitTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMIPhoneUnitTestDelegate.h; sourceTree = "<group>"; };
@@ -257,6 +258,7 @@
 		07EAA4AF103D7C38009D5CE4 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				074FFC6E10462B1000B7E5EC /* TwitterEngineProtocol.h */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
