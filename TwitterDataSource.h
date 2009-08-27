@@ -1,15 +1,15 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "TwitterConnection.h"
+#import "MGTwitterConnection.h"
 #import "TwitterStatusCell.h"
 
 @interface TwitterDataSource : NSObject<UITableViewDataSource> {
-	IBOutlet TwitterConnection							*twitterConnection;
+	IBOutlet MGTwitterConnection							*twitterConnection;
 	IBOutlet UITableView										*tableView;
 	NSArray																  *tweets;
 }
 
-@property(nonatomic, retain) TwitterConnection	*twitterConnection;
+@property(nonatomic, retain) MGTwitterConnection	*twitterConnection;
 @property(nonatomic, retain) UITableView				*tableView;
 - (TwitterStatusCell *)getTableCellForTableView: (UITableView *) theTableView;
 - (void)refresh;

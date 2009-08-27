@@ -1,6 +1,6 @@
 #import "ComposeTweetViewControllerTest.h"
 #import "ComposeTweetViewController.h"
-#import "TwitterConnection.h"
+#import "MGTwitterConnection.h"
 #import "AgileTwitterAppDelegate.h"
 #import <OCMock/OCMock.h>
 
@@ -33,8 +33,8 @@
 	viewController.textView = [[[UITextView alloc] init] autorelease];
 	viewController.textView.text = @"This is my tweet";
 	
-	OCMockObject *twitterConnection = [OCMockObject mockForClass:[TwitterConnection class]];
-	viewController.twitterConnection = (TwitterConnection *)twitterConnection;
+	OCMockObject *twitterConnection = [OCMockObject mockForClass:[MGTwitterConnection class]];
+	viewController.twitterConnection = (MGTwitterConnection *)twitterConnection;
 	
 	[[twitterConnection expect] tweet:@"This is my tweet"];
 	
@@ -48,8 +48,8 @@
 	viewController.textView = [[[UITextView alloc] init] autorelease];
 	viewController.textView.text = @"This is my tweet";
 	
-	OCMockObject *twitterConnection = [OCMockObject niceMockForClass:[TwitterConnection class]];
-	viewController.twitterConnection = (TwitterConnection *)twitterConnection;
+	OCMockObject *twitterConnection = [OCMockObject niceMockForClass:[MGTwitterConnection class]];
+	viewController.twitterConnection = (MGTwitterConnection *)twitterConnection;
 	
 	[viewController tweet];
 	

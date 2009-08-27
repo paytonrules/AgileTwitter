@@ -1,6 +1,6 @@
 #import "TwitterDataSource.h"
 #import "TwitterDataSourceTest.h"
-#import "TwitterConnection.h"
+#import "MGTwitterConnection.h"
 #import "TwitterStatusCell.h"
 #import <OCMock/OCMock.h>
 
@@ -23,8 +23,8 @@
 
 -(void) setupMockTwitterConnection
 {
-	twitterConnection = [OCMockObject mockForClass:[TwitterConnection class]];
-	twitterDataSource.twitterConnection  = (TwitterConnection *)twitterConnection;
+	twitterConnection = [OCMockObject mockForClass:[MGTwitterConnection class]];
+	twitterDataSource.twitterConnection  = (MGTwitterConnection *)twitterConnection;
 }
 
 -(void) testCellTriesForReusableCellsFirst

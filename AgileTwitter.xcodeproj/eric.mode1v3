@@ -269,24 +269,22 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>07EAA4AF103D7C38009D5CE4</string>
-								<string>07EAA2C2103D68CA009D5CE4</string>
-								<string>075AB703103AC6FF007F6780</string>
 								<string>080E96DDFE201D6D7F000001</string>
-								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
+								<string>079752C71046A6D70003C893</string>
 								<string>1C37FAAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>65</integer>
-									<integer>53</integer>
+									<integer>8</integer>
+									<integer>6</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 433}, {273, 1060}}</string>
+							<string>{{0, 0}, {273, 1060}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -323,7 +321,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TwitterConnectionTest.m</string>
+								<string>FakeTwitterConnection.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -331,19 +329,17 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TwitterConnectionTest.m</string>
+										<string>FakeTwitterConnection.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0797522E104634650003C893</string>
+										<string>079752E41046AA100003C893</string>
 										<key>history</key>
 										<array>
-											<string>07975204104634330003C893</string>
-											<string>07975205104634330003C893</string>
-											<string>07975206104634330003C893</string>
-											<string>0797522A104634650003C893</string>
-											<string>0797522B104634650003C893</string>
-											<string>07975208104634330003C893</string>
+											<string>079752D81046A7E90003C893</string>
+											<string>079752DC1046A9470003C893</string>
+											<string>079752DD1046A9470003C893</string>
+											<string>079752DE1046A9470003C893</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -379,21 +375,11 @@
 											<string>078A07E6103CE0720052BF91</string>
 											<string>078A07F7103CE1050052BF91</string>
 											<string>078A07F8103CE1050052BF91</string>
-											<string>07C19D201042BAA800FE5731</string>
-											<string>07C19D2E1042BC0400FE5731</string>
-											<string>0797520A104634330003C893</string>
-											<string>0797520B104634330003C893</string>
-											<string>0797520C104634330003C893</string>
-											<string>0797520D104634330003C893</string>
-											<string>0797520E104634330003C893</string>
-											<string>0797520F104634330003C893</string>
-											<string>07975210104634330003C893</string>
-											<string>07975211104634330003C893</string>
-											<string>07975212104634330003C893</string>
-											<string>07975213104634330003C893</string>
-											<string>07975214104634330003C893</string>
-											<string>0797522C104634650003C893</string>
-											<string>0797522D104634650003C893</string>
+											<string>079752A61046A56E0003C893</string>
+											<string>079752A81046A56E0003C893</string>
+											<string>079752DA1046A7E90003C893</string>
+											<string>079752DF1046A9470003C893</string>
+											<string>079752E01046A9470003C893</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -405,14 +391,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1625, 988}}</string>
+								<string>{{0, 0}, {1625, 981}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 59 1920 1119 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>988pt</string>
+							<string>981pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -425,14 +411,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 993}, {1625, 85}}</string>
+								<string>{{0, 986}, {1625, 92}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 59 1920 1119 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>85pt</string>
+							<string>92pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -587,8 +573,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>075AB73F103AC9DD007F6780</string>
+		<string>1CD10A99069EF8BA00B06720</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>07A4CCDB1039A0A900735496</string>
 		<string>/Users/eric/Projects-not-8thlight/Cocoa/iPhone/AgileTwitter/AgileTwitter.xcodeproj</string>
@@ -615,7 +601,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TwitterConnection.h</string>
+								<string>TwitterConnection.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -1458,18 +1444,13 @@
 				<string>075AB73F103AC9DD007F6780</string>
 				<string>07975221104634330003C893</string>
 				<string>075AB73E103AC9DD007F6780</string>
-				<string>07975222104634330003C893</string>
-				<string>07975223104634330003C893</string>
-				<string>07975224104634330003C893</string>
-				<string>07975225104634330003C893</string>
-				<string>07975226104634330003C893</string>
 			</array>
 			<key>WindowString</key>
 			<string>1007 232 697 439 0 0 1920 1178 </string>
 			<key>WindowToolGUID</key>
 			<string>075AB73F103AC9DD007F6780</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 	</array>
 </dict>

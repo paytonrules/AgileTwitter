@@ -1,9 +1,9 @@
-#import "TwitterConnectionWithRealEngineTest.h"
-@implementation TwitterConnectionWithRealEngineTest
+#import "MGTwitterConnectionWithRealEngineTest.h"
+@implementation MGTwitterConnectionWithRealEngineTest
 
 - (void)setUp
 {
-	twitterConnection = [[TwitterConnection alloc] init];
+	twitterConnection = [[MGTwitterConnection alloc] init];
 }
 
 - (void)tearDown

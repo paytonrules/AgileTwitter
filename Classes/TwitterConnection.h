@@ -1,17 +1,12 @@
 #import <Foundation/Foundation.h>
-#import "MGTwitterEngine.h"
+#import "TwitterConnectionProtocol.h"
 #import "MGTwitterEngineDelegate.h"
-#import "MGTwitterEngine.h"
 
-@interface TwitterConnection : NSObject<MGTwitterEngineDelegate>
+@interface TwitterConnection : NSObject<MGTwitterEngineDelegate, TwitterConnectionProtocol>
 {
 	IBOutlet id			delegate;
-	MGTwitterEngine *twitterEngine;
 }
 
 @property(nonatomic, retain) id delegate;
-@property(nonatomic, retain) MGTwitterEngine *twitterEngine;
--(void) tweet:(NSString*) message;
--(void) refresh;
 
 @end

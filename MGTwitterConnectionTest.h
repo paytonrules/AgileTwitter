@@ -1,11 +1,11 @@
 #import "GTMSenTestCase.h"
-#import "TwitterConnection.h"
+#import "MGTwitterConnection.h"
 #import "MGTwitterEngine.h"
 #import <OCMock/OCMock.h>
 
-@interface TwitterConnectionTest : GTMTestCase 
+@interface MGTwitterConnectionTest : GTMTestCase 
 {
-	TwitterConnection *twitterConnection;
+	MGTwitterConnection *twitterConnection;
 	OCMockObject			*twitterEngine;
 	bool							statusesReceived;
 	bool							requestFailedReceived;

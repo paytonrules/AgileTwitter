@@ -1,7 +1,7 @@
-#import "TwitterConnectionTest.h"
+#import "MGTwitterConnectionTest.h"
 #import "MGTwitterEngine.h"
 
-@implementation TwitterConnectionTest
+@implementation MGTwitterConnectionTest
 
 - (void)statusesReceived:(NSArray *)newStatuses forRequest:(NSString *)identifier
 {
@@ -19,7 +19,7 @@
 
 - (void)setUp
 {
-	twitterConnection = [[TwitterConnection alloc] init];
+	twitterConnection = [[MGTwitterConnection alloc] init];
 	
 	twitterEngine = [OCMockObject niceMockForClass:[MGTwitterEngine class]];
 	twitterConnection.twitterEngine = (MGTwitterEngine *)twitterEngine;
