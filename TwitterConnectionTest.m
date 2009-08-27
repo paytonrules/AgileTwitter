@@ -1,5 +1,5 @@
 #import "TwitterConnectionTest.h"
-#import "TWitterEngineProtocol.h"
+#import "MGTwitterEngine.h"
 
 @implementation TwitterConnectionTest
 
@@ -21,8 +21,8 @@
 {
 	twitterConnection = [[TwitterConnection alloc] init];
 	
-	twitterEngine = [OCMockObject niceMockForProtocol:@protocol(TwitterEngineProtocol)];
-	twitterConnection.twitterEngine = (NSObject<TwitterEngineProtocol> *)twitterEngine;
+	twitterEngine = [OCMockObject niceMockForClass:[MGTwitterEngine class]];
+	twitterConnection.twitterEngine = (MGTwitterEngine *)twitterEngine;
 }
 
 - (void)tearDown
